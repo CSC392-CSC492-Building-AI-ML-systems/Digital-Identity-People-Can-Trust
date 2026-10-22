@@ -1,0 +1,61 @@
+# Milestone 1: ZKP Age Verification Documentation
+
+## Overview
+
+This implementation fulfills Milestone 1 of the "CSC398H5 Project Planning and Requirements Proposal (2).pdf". It provides the foundation for a privacy-first digital identity system that verifies a user is 19+ in Ontario without exposing their actual Date of Birth.
+
+## File Structure
+
+This project has been split into a modular architecture for better maintainability and separation of concerns:
+1. `plan.txt` - Strategic breakdown of the milestone.
+2. `todo.txt` - Checklist for task tracking (including pending future upgrades).
+3. `zkp_core.py` - The shared mathematical logic for calculating age and generating/verifying HMAC-based cryptographic proofs.
+4. `auth_server.py` - The Flask backend API that issues challenges and verifies ZKPs.
+5. `wallet_client.py` - The local device simulator that securely holds the user's Date of Birth and generates proofs.
+6. `tests_zkp.py` - Unit testing suite for cryptographic logic.
+7. `team_guide.txt` - A "for dummies" guide on how other milestones must interact with this code.
+8. `notes.txt` - This documentation.
+
+## Unimplemented Future Work (Security & Architecture)
+Please note that while the core ZKP logic and APIs are fully functional as an MVP, the "Security & Architecture Upgrades" added to the bottom of `todo.txt` have **not** been implemented yet. 
+
+Currently, the system still uses:
+- In-memory dictionary storage (no persistent, secure database yet).
+- Hardcoded `localhost:5000` URLs and ports.
+- A hardcoded `SERVER_SECRET` (not dynamically initialized or tied to a wipe function).
+- A hardcoded `LEGAL_AGE` (not yet configurable via CLI or config file).
+- No centralized `config.py` file.
+
+These items remain as technical debt/todos to be completed in a future sprint before production release.
+
+## How the Code Works & API Info
+
+### 1. DigitalWallet (`wallet_client.py` - D1.1)
+
+Simulates the user's digital device. It stores the `user_id` and `dob_string`. The raw `dob_string` never leaves this class. It interacts with the server to get a challenge nonce and submits the generated mathematical proof.
+
+### 2. ZKP Core (`zkp_core.py` - D1.1 & D1.2)
+
+Contains `generate_proof` and `verify_proof`. 
+
+- For the MVP simulation, this uses an HMAC-based abstraction tied to a server secret and a session nonce.
+- If the user is underage (e.g., User Story 1: The Child Registration Attempt), the generator yields `None`, blocking the action natively on the client.
+- The server uses `verify_proof` to ensure the math checks out against the provided nonce without ever knowing the user's age.
+
+### 3. Authentication Server (`auth_server.py` - D1.3)
+
+Exposes the main Flask API endpoints:
+
+- `POST /api/get_challenge`: Generates a secure, one-time nonce for the user to prevent replay attacks.
+- `POST /api/register`: Takes a user_id and a proof. If verified, registers the user to the active database.
+- `POST /api/login`: Takes a user_id and a fresh ZKP. If verified, grants session access (Fulfills User Story 3: The Frictionless Re-Login).
+
+## How to Run the Application & Tests
+1. Ensure Python 3.8+ and Flask are installed (`pip install flask requests`).
+2. **Start the Server:** In one terminal window, run:
+   `python auth_server.py`
+3. **Run the Client Simulation:** In a second terminal window, run:
+   `python wallet_client.py`
+   (This will demonstrate an adult successfully registering and a child being blocked).
+4. **Run the Tests:** 
+   `python -m unittest tests_zkp.py -v`

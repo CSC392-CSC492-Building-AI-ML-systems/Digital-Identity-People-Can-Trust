@@ -1,0 +1,17 @@
+# Milestone 1: ZKP Age Verification Checklist
+
+## Core Implementation
+[x] Plan architecture for client-wallet, prover, and server-verifier (D1.1, D1.2, D1.3).
+[x] Develop `DigitalWallet` class to safely store user secrets.
+[x] Develop ZKP Core to create and verify the mathematical age proof.
+[x] Implement Flask backend registration and login logic.
+[x] Create a dedicated testing suite.
+[x] Draft cross-milestone integration guide for the team.
+
+## Security & Architecture Upgrades (New)
+[ ] Migrate from in-memory dictionary storage to a secure, persistent database.
+[ ] Implement dynamic environment variables for `SERVER_URL` and ports to prevent conflicts.
+[ ] Secure `SERVER_SECRET`: Load securely, initialize once, and tie any secret resets to a "clear all data" function.
+[ ] Extract `LEGAL_AGE` into a CLI-manageable or config-driven variable.
+[ ] Create a centralized configuration file (e.g., `config.py`) for Flask initialization and API paths.
+[ ] Expand unit tests to rigorously test security boundaries, replay attacks, and payload validation.
