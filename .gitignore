@@ -2,3 +2,5 @@ mechine_learning/data/
 mechine_learning/demo_data/
 __pycache__/
 .DS_Store
+
+xkp/venv/
