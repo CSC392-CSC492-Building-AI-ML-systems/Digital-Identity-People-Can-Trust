@@ -1,0 +1,15 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1516303105120 0 0 load / {} {}
+0 1516303115687 452 244 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div {} {"topRight":326,"topLeft":355,"bottomRight":293,"bottomLeft":325,"middle":87,"inTarget":false}
+0 1516303115837 444 240 mousemove //*[@id='rso']/div[1]/div[1]/div/h3 {} {"topRight":331,"topLeft":346,"bottomRight":301,"bottomLeft":317,"middle":82,"inTarget":false}
+0 1516303116036 416 240 mousemove //*[@id='rso']/div[1]/div[1]/div/h3 {} {"topRight":357,"topLeft":320,"bottomRight":329,"bottomLeft":289,"middle":84,"inTarget":false}
+0 1516303116269 416 232 mousemove //*[@id='rso']/div[1]/div[1]/div/h3 {} {"topRight":354,"topLeft":317,"bottomRight":328,"bottomLeft":288,"middle":76,"inTarget":false}
+0 1516303116419 284 224 mouseover //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":476,"topLeft":199,"bottomRight":460,"bottomLeft":156,"middle":166,"inTarget":false}
+0 1516303116571 248 264 mouseover //*[@id='rso']/div[1]/div[1]/div/div/div/span {} {"topRight":522,"topLeft":203,"bottomRight":498,"bottomLeft":129,"middle":216,"inTarget":false}
+0 1516303116736 237 300 mousemove //*[@id='rso']/div[1] {} {"topRight":545,"topLeft":228,"bottomRight":514,"bottomLeft":137,"middle":244,"inTarget":false}
+0 1516303116887 236 324 mousemove //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":555,"topLeft":249,"bottomRight":519,"bottomLeft":152,"middle":260,"inTarget":false}
+0 1516303118721 236 325 mousedown //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":556,"topLeft":250,"bottomRight":519,"bottomLeft":153,"middle":260,"inTarget":false}
+0 1516303118814 236 326 mouseup //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":556,"topLeft":250,"bottomRight":520,"bottomLeft":153,"middle":261,"inTarget":false}
+0 1516303118815 236 326 click //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":556,"topLeft":250,"bottomRight":520,"bottomLeft":153,"middle":261,"inTarget":false}
+0 1516303118815 0 0 beforeunload / {} {}
+0 1516303118975 0 0 unload / {} {}

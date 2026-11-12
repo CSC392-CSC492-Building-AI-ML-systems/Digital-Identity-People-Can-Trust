@@ -1,0 +1,3 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1482390486763 575 160 mousemove //*[@id='tads']/ol/li/div[2] {} {"topRight":179,"topLeft":451,"bottomRight":201,"bottomLeft":460,"middle":141,"inTarget":true}
+0 1482390486926 378 214 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":383,"topLeft":275,"bottomRight":370,"bottomLeft":256,"middle":65,"inTarget":true}

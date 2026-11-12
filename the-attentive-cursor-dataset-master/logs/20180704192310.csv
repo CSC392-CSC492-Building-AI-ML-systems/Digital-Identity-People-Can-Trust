@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1530725144786 0 0 load / {} {}
+0 1530725144943 1213 237 mousemove //*[@id='rhs_block']/div/div/div[4]/div[1] {} {"topRight":135,"topLeft":443,"bottomRight":291,"bottomLeft":512,"middle":211,"inTarget":true}
+0 1530725145274 1228 421 mouseover //*[@id='rhs_block']/div/div/div[4]/div[1] {} {"topRight":315,"topLeft":540,"bottomRight":106,"bottomLeft":450,"middle":236,"inTarget":true}
+0 1530725145427 990 404 mousemove //*[@id='rhs_block']/div/div/div[4]/div[1] {} {"topRight":392,"topLeft":359,"bottomRight":282,"bottomLeft":234,"middle":92,"inTarget":true}
+0 1530725145577 740 276 mouseover //*[@id='res'] {} {"topRight":532,"topLeft":177,"bottomRight":563,"bottomLeft":255,"middle":280,"inTarget":false}
+0 1530725146478 0 0 blur / {} {}
+0 1530725150461 0 0 focus / {} {}
+0 1530725150748 935 1 mouseover //*[@id='searchform']/div/div {} {"topRight":326,"topLeft":179,"bottomRight":609,"bottomLeft":545,"middle":325,"inTarget":false}
+0 1530725150926 466 135 mouseover //*[@id='rso']/div[1]/div[1]/div/div/div/div/cite/b[2] {} {"topRight":779,"topLeft":325,"bottomRight":871,"bottomLeft":508,"middle":580,"inTarget":false}
+0 1530725151080 432 123 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":812,"topLeft":358,"bottomRight":907,"bottomLeft":539,"middle":616,"inTarget":false}
+0 1530725151246 423 118 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":821,"topLeft":367,"bottomRight":917,"bottomLeft":549,"middle":626,"inTarget":false}
+0 1530725151898 408 125 mousedown //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":836,"topLeft":382,"bottomRight":927,"bottomLeft":554,"middle":638,"inTarget":false}
+0 1530725151980 408 125 mouseup //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":836,"topLeft":382,"bottomRight":927,"bottomLeft":554,"middle":638,"inTarget":false}
+0 1530725151981 408 125 click //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":836,"topLeft":382,"bottomRight":927,"bottomLeft":554,"middle":638,"inTarget":false}
+0 1530725151981 0 0 beforeunload / {} {}
+0 1530725152170 0 0 unload / {} {}

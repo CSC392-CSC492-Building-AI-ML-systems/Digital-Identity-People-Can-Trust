@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486775452477 0 0 load / {} {}
+0 1486775455079 0 0 focus / {} {}
+0 1486775455414 424 9 mouseover //*[@id='sfdiv'] {} {"topRight":333,"topLeft":310,"bottomRight":423,"bottomLeft":405,"middle":184,"inTarget":false}
+0 1486775455584 372 134 mouseover //*[@id='tads']/ol/li/div[1] {} {"topRight":374,"topLeft":246,"bottomRight":402,"bottomLeft":287,"middle":87,"inTarget":true}
+0 1486775455736 351 187 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":403,"topLeft":239,"bottomRight":405,"bottomLeft":244,"middle":85,"inTarget":true}
+0 1486775456094 345 202 mousemove //*[@id='tads']/ol/li/ul/li[1] {} {"topRight":412,"topLeft":240,"bottomRight":408,"bottomLeft":233,"middle":91,"inTarget":true}
+0 1486775456255 253 273 mouseover //*[@id='tads']/ol/li {} {"topRight":521,"topLeft":213,"bottomRight":491,"bottomLeft":126,"middle":200,"inTarget":true}
+0 1486775456475 247 278 mousemove //*[@id='tads']/ol/li {} {"topRight":528,"topLeft":214,"bottomRight":497,"bottomLeft":119,"middle":207,"inTarget":true}
+0 1486775456675 243 292 mouseover //*[@id='rso']/div[1]/div/h3/a {} {"topRight":537,"topLeft":224,"bottomRight":501,"bottomLeft":115,"middle":217,"inTarget":false}
+0 1486775456876 243 293 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":537,"topLeft":225,"bottomRight":501,"bottomLeft":115,"middle":217,"inTarget":false}
+0 1486775457401 243 296 mousedown //*[@id='rso']/div[1]/div/h3/a {} {"topRight":538,"topLeft":227,"bottomRight":501,"bottomLeft":115,"middle":219,"inTarget":false}
+0 1486775457456 243 296 mouseup //*[@id='rso']/div[1]/div/h3/a {} {"topRight":538,"topLeft":227,"bottomRight":501,"bottomLeft":115,"middle":219,"inTarget":false}
+0 1486775457458 243 296 click //*[@id='rso']/div[1]/div/h3/a {} {"topRight":538,"topLeft":227,"bottomRight":501,"bottomLeft":115,"middle":219,"inTarget":false}
+0 1486775457460 0 0 beforeunload / {} {}
+0 1486775458331 243 296 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":538,"topLeft":227,"bottomRight":501,"bottomLeft":115,"middle":219,"inTarget":false}
+0 1486775461816 0 0 unload / {} {}

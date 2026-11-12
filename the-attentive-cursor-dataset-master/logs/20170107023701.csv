@@ -1,0 +1,9 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1483753130138 0 0 load / {} {}
+0 1483753130160 222 534 mousedown //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":673,"topLeft":438,"bottomRight":521,"bottomLeft":97,"middle":310,"inTarget":false}
+0 1483753130315 222 534 mouseup //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":673,"topLeft":438,"bottomRight":521,"bottomLeft":97,"middle":310,"inTarget":false}
+0 1483753130316 222 534 click //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":673,"topLeft":438,"bottomRight":521,"bottomLeft":97,"middle":310,"inTarget":false}
+0 1483753130317 0 0 beforeunload / {} {}
+0 1483753130468 249 488 mouseover //*[@id='tvcap']/div/div/div[2]/div[1]/div[3]/div[1]/div[2]/div[3] {} {"topRight":624,"topLeft":401,"bottomRight":494,"bottomLeft":123,"middle":258,"inTarget":true}
+0 1483753130620 502 65 mousemove //*[@id='slim_appbar'] {} {"topRight":243,"topLeft":376,"bottomRight":506,"bottomLeft":582,"middle":253,"inTarget":false}
+0 1483753130832 0 0 unload / {} {}

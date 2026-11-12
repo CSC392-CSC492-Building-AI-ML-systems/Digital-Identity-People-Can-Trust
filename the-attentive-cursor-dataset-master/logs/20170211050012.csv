@@ -1,0 +1,12 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486785685259 0 0 load / {} {}
+0 1486785685496 413 258 mousemove //*[@id='tads']/ol/li/ul/li[1]/div {} {"topRight":398,"topLeft":326,"bottomRight":381,"bottomLeft":305,"middle":47,"inTarget":true}
+0 1486785685646 368 251 mousemove //*[@id='tads']/ol/li/ul/li[1]/div {} {"topRight":437,"topLeft":284,"bottomRight":426,"bottomLeft":267,"middle":87,"inTarget":true}
+0 1486785685807 333 238 mousemove //*[@id='vads-0-0-1-1-0'] {} {"topRight":466,"topLeft":247,"bottomRight":463,"bottomLeft":242,"middle":120,"inTarget":true}
+0 1486785686266 320 235 mousedown //*[@id='vads-0-0-1-1-0'] {} {"topRight":477,"topLeft":235,"bottomRight":477,"bottomLeft":233,"middle":133,"inTarget":true}
+0 1486785686375 320 235 mouseup //*[@id='vads-0-0-1-1-0'] {} {"topRight":477,"topLeft":235,"bottomRight":477,"bottomLeft":233,"middle":133,"inTarget":true}
+0 1486785686377 320 235 click //*[@id='vads-0-0-1-1-0'] {} {"topRight":477,"topLeft":235,"bottomRight":477,"bottomLeft":233,"middle":133,"inTarget":true}
+0 1486785686380 0 0 beforeunload / {} {}
+0 1486785686611 326 240 mousemove //*[@id='vads-0-0-1-1-0'] {} {"topRight":473,"topLeft":242,"bottomRight":470,"bottomLeft":235,"middle":127,"inTarget":true}
+0 1486785686767 522 302 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":326,"topLeft":443,"bottomRight":264,"bottomLeft":399,"middle":97,"inTarget":true}
+0 1486785686859 0 0 unload / {} {}

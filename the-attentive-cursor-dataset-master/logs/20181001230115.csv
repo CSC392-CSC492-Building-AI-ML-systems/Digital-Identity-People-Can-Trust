@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538427846916 0 0 load / {} {}
+0 1538427849723 725 96 mouseover //*[@id='slim_appbar'] {} {"topRight":19,"topLeft":597,"bottomRight":209,"bottomLeft":632,"middle":308,"inTarget":false}
+0 1538427849902 611 180 mousemove //*[@id='tads']/ol/li/div[3] {} {"topRight":155,"topLeft":490,"bottomRight":182,"bottomLeft":499,"middle":176,"inTarget":true}
+0 1538427854720 607 181 mousemove //*[@id='tads']/ol/li/div[3] {} {"topRight":159,"topLeft":486,"bottomRight":184,"bottomLeft":495,"middle":172,"inTarget":true}
+0 1538427854870 434 168 mousemove //*[@id='tads']/ol/li/div[3] {} {"topRight":317,"topLeft":313,"bottomRight":339,"bottomLeft":335,"middle":34,"inTarget":true}
+0 1538427855437 372 151 mousemove //*[@id='tads']/ol/li/div[2] {} {"topRight":375,"topLeft":249,"bottomRight":402,"bottomLeft":288,"middle":82,"inTarget":true}
+0 1538427855587 335 155 mousemove //*[@id='tads']/ol/li/div[2] {} {"topRight":413,"topLeft":214,"bottomRight":435,"bottomLeft":255,"middle":111,"inTarget":true}
+0 1538427855737 319 150 mousemove //*[@id='tads']/ol/li/div[2]/b[1] {} {"topRight":428,"topLeft":197,"bottomRight":452,"bottomLeft":245,"middle":128,"inTarget":true}
+0 1538427855887 306 134 mousemove //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":439,"topLeft":181,"bottomRight":470,"bottomLeft":246,"middle":147,"inTarget":true}
+0 1538427856122 305 129 mouseover //*[@id='vs0p1c0'] {} {"topRight":440,"topLeft":179,"bottomRight":473,"bottomLeft":249,"middle":150,"inTarget":true}
+0 1538427856337 301 123 mousemove //*[@id='vs0p1c0'] {} {"topRight":444,"topLeft":175,"bottomRight":479,"bottomLeft":250,"middle":156,"inTarget":true}
+0 1538427858164 299 122 mousedown //*[@id='vs0p1c0']/font/font {} {"topRight":446,"topLeft":172,"bottomRight":481,"bottomLeft":250,"middle":159,"inTarget":true}
+0 1538427858304 299 122 mouseup //*[@id='vs0p1c0']/font/font {} {"topRight":446,"topLeft":172,"bottomRight":481,"bottomLeft":250,"middle":159,"inTarget":true}
+0 1538427858306 299 122 click //*[@id='vs0p1c0']/font/font {} {"topRight":446,"topLeft":172,"bottomRight":481,"bottomLeft":250,"middle":159,"inTarget":true}
+0 1538427858314 0 0 beforeunload / {} {}
+0 1538427860043 0 0 unload / {} {}

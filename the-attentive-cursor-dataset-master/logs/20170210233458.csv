@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486766154227 0 0 load / {} {}
+0 1486766154695 311 221 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[1]/div[1]/div[1] {} {"topRight":445,"topLeft":216,"bottomRight":510,"bottomLeft":330,"middle":147,"inTarget":true}
+0 1486766167926 311 223 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[1]/div[1]/div[1] {} {"topRight":446,"topLeft":217,"bottomRight":509,"bottomLeft":329,"middle":146,"inTarget":true}
+0 1486766168158 283 231 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/a {} {"topRight":475,"topLeft":199,"bottomRight":529,"bottomLeft":307,"middle":167,"inTarget":true}
+0 1486766168317 280 232 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/a {} {"topRight":478,"topLeft":197,"bottomRight":531,"bottomLeft":305,"middle":169,"inTarget":true}
+0 1486766168467 278 180 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[1]/div[1]/div[1] {} {"topRight":469,"topLeft":167,"bottomRight":561,"bottomLeft":350,"middle":198,"inTarget":true}
+0 1486766168640 273 167 mouseover //*[@id='platop0'] {} {"topRight":472,"topLeft":157,"bottomRight":572,"bottomLeft":360,"middle":210,"inTarget":true}
+0 1486766168822 257 168 mousemove //*[@id='platop0'] {} {"topRight":488,"topLeft":143,"bottomRight":585,"bottomLeft":352,"middle":222,"inTarget":true}
+0 1486766170330 256 168 mousemove //*[@id='platop0'] {} {"topRight":489,"topLeft":142,"bottomRight":585,"bottomLeft":352,"middle":223,"inTarget":true}
+0 1486766170483 373 171 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[2]/div[1]/div[1] {} {"topRight":374,"topLeft":253,"bottomRight":491,"bottomLeft":407,"middle":144,"inTarget":true}
+0 1486766170645 430 171 mousemove //*[@id='platop1'] {} {"topRight":318,"topLeft":309,"bottomRight":450,"bottomLeft":444,"middle":130,"inTarget":true}
+0 1486766171799 431 171 mousedown //*[@id='platop1'] {} {"topRight":317,"topLeft":310,"bottomRight":449,"bottomLeft":444,"middle":130,"inTarget":true}
+0 1486766171965 431 171 mouseup //*[@id='platop1'] {} {"topRight":317,"topLeft":310,"bottomRight":449,"bottomLeft":444,"middle":130,"inTarget":true}
+0 1486766171966 431 171 click //*[@id='platop1'] {} {"topRight":317,"topLeft":310,"bottomRight":449,"bottomLeft":444,"middle":130,"inTarget":true}
+0 1486766171968 0 0 beforeunload / {} {}
+0 1486766173063 0 0 unload / {} {}

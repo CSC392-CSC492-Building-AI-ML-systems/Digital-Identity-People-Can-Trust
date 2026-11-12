@@ -1,0 +1,7 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1534795059789 0 0 load / {} {}
+0 1534795062384 462 475 mousemove //*[@id='rso']/div[1]/div/table/tbody/tr[2]/td/div {} {"topRight":469,"topLeft":502,"bottomRight":330,"bottomLeft":375,"middle":274,"inTarget":false}
+0 1534795062535 684 205 mousemove //*[@id='tads']/ol/li {} {"topRight":121,"topLeft":566,"bottomRight":116,"bottomLeft":565,"middle":248,"inTarget":true}
+0 1534795062700 781 14 mousemove //*[@id='tsf']/div[2] {} {"topRight":94,"topLeft":659,"bottomRight":292,"bottomLeft":714,"middle":393,"inTarget":false}
+0 1534795063893 0 0 beforeunload / {} {}
+0 1534795063895 0 0 unload / {} {}

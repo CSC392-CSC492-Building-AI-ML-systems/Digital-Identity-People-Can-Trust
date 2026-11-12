@@ -1,0 +1,15 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538391526350 0 0 load / {} {}
+0 1538391527768 78 237 mousemove //*[@id='rhscol'] {} {"topRight":999,"topLeft":724,"bottomRight":1003,"bottomLeft":729,"middle":851,"inTarget":false}
+0 1538391528410 0 0 scroll / {} {}
+0 1538391528607 0 0 scroll / {} {}
+0 1538391529013 107 230 mousemove //*[@id='rhscol'] {} {"topRight":969,"topLeft":694,"bottomRight":975,"bottomLeft":703,"middle":822,"inTarget":false}
+0 1538391529165 352 148 mouseover //*[@id='rso']/div[1]/div/div/div/div/div {} {"topRight":717,"topLeft":440,"bottomRight":757,"bottomLeft":503,"middle":586,"inTarget":false}
+0 1538391529416 365 100 mouseover //*[@id='tads'] {} {"topRight":703,"topLeft":425,"bottomRight":762,"bottomLeft":517,"middle":584,"inTarget":false}
+0 1538391529582 367 127 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":701,"topLeft":424,"bottomRight":750,"bottomLeft":501,"middle":575,"inTarget":false}
+0 1538391529661 367 128 mousedown //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":701,"topLeft":424,"bottomRight":750,"bottomLeft":500,"middle":575,"inTarget":false}
+0 1538391529787 367 128 mouseup //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":701,"topLeft":424,"bottomRight":750,"bottomLeft":500,"middle":575,"inTarget":false}
+0 1538391529790 367 128 click //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":701,"topLeft":424,"bottomRight":750,"bottomLeft":500,"middle":575,"inTarget":false}
+0 1538391529791 0 0 beforeunload / {} {}
+0 1538391529953 378 70 mouseover //*[@id='resultStats'] {} {"topRight":691,"topLeft":414,"bottomRight":763,"bottomLeft":525,"middle":580,"inTarget":false}
+0 1538391530346 0 0 unload / {} {}

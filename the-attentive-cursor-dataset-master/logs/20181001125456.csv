@@ -1,0 +1,8 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538391451930 0 0 load / {} {}
+0 1538391454371 440 306 mousemove //*[@id='uid_3'] {} {"topRight":829,"topLeft":403,"bottomRight":903,"bottomLeft":541,"middle":587,"inTarget":false}
+0 1538391455846 0 0 blur / {} {}
+0 1538391463995 0 0 focus / {} {}
+0 1538391467373 0 0 blur / {} {}
+0 1538392284755 0 0 beforeunload / {} {}
+0 1538392284834 0 0 unload / {} {}

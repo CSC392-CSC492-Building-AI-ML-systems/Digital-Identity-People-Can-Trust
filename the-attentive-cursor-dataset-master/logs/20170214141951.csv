@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1487078479552 0 0 load / {} {}
+0 1487078493854 0 0 focus / {} {}
+0 1487078494117 1016 2 mouseover //*[@id='searchform']/div/div {} {"topRight":289,"topLeft":893,"bottomRight":348,"bottomLeft":914,"middle":601,"inTarget":false}
+0 1487078494269 733 161 mouseover //*[@id='tads']/ol/li/div[2] {} {"topRight":62,"topLeft":608,"bottomRight":59,"bottomLeft":608,"middle":297,"inTarget":true}
+0 1487078494421 646 223 mousemove //*[@id='center_col'] {} {"topRight":157,"topLeft":532,"bottomRight":98,"bottomLeft":518,"middle":219,"inTarget":false}
+0 1487078494572 537 141 mousemove //*[@id='tads']/ol/li/div[1] {} {"topRight":211,"topLeft":411,"bottomRight":221,"bottomLeft":416,"middle":103,"inTarget":true}
+0 1487078494724 389 199 mousemove //*[@id='tads']/ol/li/div[4] {} {"topRight":369,"topLeft":279,"bottomRight":356,"bottomLeft":262,"middle":61,"inTarget":true}
+0 1487078494876 368 381 mouseover //*[@id='rso']/div[1]/div[2]/div/div/div/div[2]/a[3] {} {"topRight":469,"topLeft":370,"bottomRight":409,"bottomLeft":290,"middle":232,"inTarget":false}
+0 1487078495029 361 422 mousemove //*[@id='rso'] {} {"topRight":500,"topLeft":397,"bottomRight":433,"bottomLeft":309,"middle":273,"inTarget":false}
+0 1487078495217 384 470 mousemove //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":516,"topLeft":450,"bottomRight":439,"bottomLeft":359,"middle":315,"inTarget":false}
+0 1487078495301 386 472 mousedown //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":516,"topLeft":453,"bottomRight":438,"bottomLeft":361,"middle":316,"inTarget":false}
+0 1487078495405 386 472 mouseup //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":516,"topLeft":453,"bottomRight":438,"bottomLeft":361,"middle":316,"inTarget":false}
+0 1487078495405 386 472 click //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":516,"topLeft":453,"bottomRight":438,"bottomLeft":361,"middle":316,"inTarget":false}
+0 1487078495405 0 0 beforeunload / {} {}
+0 1487078495653 388 472 mousemove //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":515,"topLeft":454,"bottomRight":437,"bottomLeft":363,"middle":316,"inTarget":false}
+0 1487078495661 0 0 unload / {} {}

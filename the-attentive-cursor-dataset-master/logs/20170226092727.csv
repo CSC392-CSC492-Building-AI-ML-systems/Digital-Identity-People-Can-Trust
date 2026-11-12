@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488097738279 0 0 load / {} {}
+0 1488097738280 0 0 focus / {} {}
+0 1488097742166 474.739990234375 308.41998291015625 mousemove //*[@id='rso']/div {} {"topRight":795,"topLeft":375,"bottomRight":772,"bottomLeft":321,"middle":558,"inTarget":false}
+0 1488097746313 474.739990234375 309.4700012207031 mousemove //*[@id='rso']/div {} {"topRight":796,"topLeft":375,"bottomRight":772,"bottomLeft":321,"middle":558,"inTarget":false}
+0 1488097746538 473.67999267578125 308.41998291015625 mousemove //*[@id='rso']/div {} {"topRight":796,"topLeft":376,"bottomRight":773,"bottomLeft":322,"middle":559,"inTarget":false}
+0 1488097747577 472.6299743652344 306.32000732421875 mousemove //*[@id='rso']/div {} {"topRight":797,"topLeft":375,"bottomRight":773,"bottomLeft":323,"middle":559,"inTarget":false}
+0 1488097747738 387.3699951171875 182.11000061035156 mousemove //*[@id='rso']/div/div[1]/div/div/div/span {} {"topRight":860,"topLeft":410,"bottomRight":859,"bottomLeft":408,"middle":630,"inTarget":false}
+0 1488097747899 381.04998779296875 151.5800018310547 mousemove //*[@id='rso']/div/div[1]/div/div/div {} {"topRight":864,"topLeft":411,"bottomRight":868,"bottomLeft":420,"middle":636,"inTarget":false}
+0 1488097748059 376.8399963378906 129.47000122070312 mousemove //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":867,"topLeft":414,"bottomRight":875,"bottomLeft":430,"middle":642,"inTarget":false}
+0 1488097751474 376.8399963378906 124.20999908447265 mousemove //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":867,"topLeft":414,"bottomRight":876,"bottomLeft":432,"middle":642,"inTarget":false}
+0 1488097751746 376.8399963378906 124.20999908447265 mousedown //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":867,"topLeft":414,"bottomRight":876,"bottomLeft":432,"middle":642,"inTarget":false}
+0 1488097751834 376.8399963378906 124.20999908447265 mouseup //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":867,"topLeft":414,"bottomRight":876,"bottomLeft":432,"middle":642,"inTarget":false}
+0 1488097751838 0 0 beforeunload / {} {}
+0 1488097751842 376.8399963378906 124.20999908447265 click //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":867,"topLeft":414,"bottomRight":876,"bottomLeft":432,"middle":642,"inTarget":false}
+0 1488097751957 0 0 unload / {} {}

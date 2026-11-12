@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538401755863 0 0 load / {} {}
+0 1538401756050 185 2 mouseover //*[@id='searchform']/div/div {} {"topRight":568,"topLeft":113,"bottomRight":612,"bottomLeft":256,"middle":305,"inTarget":false}
+0 1538401756200 180 75 mousemove //*[@id='resultStats'] {} {"topRight":565,"topLeft":58,"bottomRight":591,"bottomLeft":184,"middle":275,"inTarget":false}
+0 1538401756365 203 174 mousemove //*[@id='tads']/ol/li/div[3] {} {"topRight":546,"topLeft":105,"bottomRight":547,"bottomLeft":108,"middle":233,"inTarget":true}
+0 1538401756515 210 264 mouseover //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":559,"topLeft":183,"bottomRight":534,"bottomLeft":83,"middle":243,"inTarget":false}
+0 1538401756964 210 270 mouseover //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":560,"topLeft":189,"bottomRight":534,"bottomLeft":84,"middle":245,"inTarget":false}
+0 1538401758081 210 22 mouseover //*[@id='lst-ib'] {} {"topRight":540,"topLeft":113,"bottomRight":581,"bottomLeft":244,"middle":273,"inTarget":false}
+0 1538401758233 220 263 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":549,"topLeft":187,"bottomRight":524,"bottomLeft":93,"middle":233,"inTarget":false}
+0 1538401758400 230 299 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/span {} {"topRight":551,"topLeft":224,"bottomRight":516,"bottomLeft":112,"middle":240,"inTarget":false}
+0 1538401758650 240 278 mousedown //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":535,"topLeft":210,"bottomRight":505,"bottomLeft":115,"middle":221,"inTarget":false}
+0 1538401758776 240 278 mouseup //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":535,"topLeft":210,"bottomRight":505,"bottomLeft":115,"middle":221,"inTarget":false}
+0 1538401758776 240 278 click //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":535,"topLeft":210,"bottomRight":505,"bottomLeft":115,"middle":221,"inTarget":false}
+0 1538401758777 0 0 beforeunload / {} {}
+0 1538401758981 240 267 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":531,"topLeft":201,"bottomRight":504,"bottomLeft":113,"middle":216,"inTarget":false}
+0 1538401759065 0 0 unload / {} {}

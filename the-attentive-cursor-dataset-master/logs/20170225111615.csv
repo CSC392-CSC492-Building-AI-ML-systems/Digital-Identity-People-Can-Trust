@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488017874068 0 0 load / {} {}
+0 1488017874485 371 237 mouseover //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[3]/div[1]/div[2]/div[1]/a {} {"topRight":395,"topLeft":276,"bottomRight":385,"bottomLeft":261,"middle":67,"inTarget":true}
+0 1488017874641 329 370 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":492,"topLeft":332,"bottomRight":417,"bottomLeft":205,"middle":185,"inTarget":false}
+0 1488017875793 328 376 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div[1]/cite/b[1] {} {"topRight":496,"topLeft":336,"bottomRight":418,"bottomLeft":205,"middle":191,"inTarget":false}
+0 1488017876084 333 356 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":481,"topLeft":323,"bottomRight":412,"bottomLeft":206,"middle":171,"inTarget":false}
+0 1488017876272 335 352 mouseover //*[@id='rso']/div[1]/div[1]/div/h3 {} {"topRight":477,"topLeft":322,"bottomRight":409,"bottomLeft":208,"middle":167,"inTarget":false}
+0 1488017876539 337 346 mousemove //*[@id='center_col'] {} {"topRight":472,"topLeft":318,"bottomRight":407,"bottomLeft":209,"middle":161,"inTarget":false}
+0 1488017876770 337 345 mouseover //*[@id='tads'] {} {"topRight":472,"topLeft":317,"bottomRight":407,"bottomLeft":209,"middle":160,"inTarget":false}
+0 1488017876978 338 344 mousemove //*[@id='tads'] {} {"topRight":471,"topLeft":317,"bottomRight":406,"bottomLeft":210,"middle":159,"inTarget":false}
+0 1488017877857 339 340 mousemove //*[@id='tads'] {} {"topRight":468,"topLeft":315,"bottomRight":405,"bottomLeft":211,"middle":155,"inTarget":false}
+0 1488017882202 336 361 mousedown //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":481,"topLeft":329,"bottomRight":409,"bottomLeft":210,"middle":174,"inTarget":false}
+0 1488017882291 336 361 mouseup //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":481,"topLeft":329,"bottomRight":409,"bottomLeft":210,"middle":174,"inTarget":false}
+0 1488017882292 0 0 beforeunload / {} {}
+0 1488017882294 336 361 click //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":481,"topLeft":329,"bottomRight":409,"bottomLeft":210,"middle":174,"inTarget":false}
+0 1488017882353 0 0 unload / {} {}

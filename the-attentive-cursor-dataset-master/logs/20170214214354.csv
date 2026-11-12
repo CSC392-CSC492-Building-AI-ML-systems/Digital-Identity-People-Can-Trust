@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1487105136695 0 0 load / {} {}
+0 1487105139607 0 0 blur / {} {}
+0 1487105145159 0 0 focus / {} {}
+0 1487105145552 486 12 mouseover //*[@id='sfdiv'] {} {"topRight":590,"topLeft":318,"bottomRight":1751,"bottomLeft":1679,"middle":979,"inTarget":false}
+0 1487105145708 544 377 mousemove //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":590,"topLeft":366,"bottomRight":1389,"bottomLeft":1309,"middle":637,"inTarget":false}
+0 1487105146019 548 396 mousemove //*[@id='rso']/div[2]/div/div[2]/div[2]/a {} {"topRight":595,"topLeft":378,"bottomRight":1370,"bottomLeft":1290,"middle":620,"inTarget":false}
+0 1487105146170 490 526 mousemove //*[@id='rso']/div[2]/div/div[4]/a {} {"topRight":714,"topLeft":516,"bottomRight":1275,"bottomLeft":1176,"middle":567,"inTarget":false}
+0 1487105146322 391 587 mouseover //*[@id='rso'] {} {"topRight":830,"topLeft":625,"bottomRight":1271,"bottomLeft":1148,"middle":615,"inTarget":false}
+0 1487105146479 373 611 mousemove //*[@id='rso'] {} {"topRight":859,"topLeft":655,"bottomRight":1261,"bottomLeft":1132,"middle":620,"inTarget":false}
+0 1487105146655 370 629 mousemove //*[@id='rso']/div[3]/div/div[1]/div/h3/a {} {"topRight":872,"topLeft":671,"bottomRight":1248,"bottomLeft":1116,"middle":615,"inTarget":false}
+0 1487105148185 370 629 mousemove //*[@id='rso']/div[3]/div/div[1]/div/h3/a {} {"topRight":872,"topLeft":671,"bottomRight":1248,"bottomLeft":1116,"middle":615,"inTarget":false}
+0 1487105150986 370 629 mousedown //*[@id='rso']/div[3]/div/div[1]/div/h3/a {} {"topRight":872,"topLeft":671,"bottomRight":1248,"bottomLeft":1116,"middle":615,"inTarget":false}
+0 1487105151116 370 629 mouseup //*[@id='rso']/div[3]/div/div[1]/div/h3/a {} {"topRight":872,"topLeft":671,"bottomRight":1248,"bottomLeft":1116,"middle":615,"inTarget":false}
+0 1487105151117 370 629 click //*[@id='rso']/div[3]/div/div[1]/div/h3/a {} {"topRight":872,"topLeft":671,"bottomRight":1248,"bottomLeft":1116,"middle":615,"inTarget":false}
+0 1487105151117 0 0 beforeunload / {} {}
+0 1487105151289 0 0 unload / {} {}

@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538403744203 0 0 load / {} {}
+0 1538403744378 21 422 mousemove //*[@id='rcnt'] {} {"topRight":791,"topLeft":339,"bottomRight":733,"bottomLeft":159,"middle":470,"inTarget":false}
+0 1538403744543 135 398 mouseover //*[@id='res'] {} {"topRight":678,"topLeft":298,"bottomRight":616,"bottomLeft":94,"middle":359,"inTarget":false}
+0 1538403744709 299 354 mouseover //*[@id='rso']/div[1]/div[1]/div/div/div/span {} {"topRight":512,"topLeft":306,"bottomRight":448,"bottomLeft":178,"middle":205,"inTarget":false}
+0 1538403744910 330 336 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div/cite {} {"topRight":477,"topLeft":311,"bottomRight":415,"bottomLeft":205,"middle":171,"inTarget":false}
+0 1538403745092 330 328 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":473,"topLeft":305,"bottomRight":415,"bottomLeft":203,"middle":165,"inTarget":false}
+0 1538403746459 330 326 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":472,"topLeft":303,"bottomRight":415,"bottomLeft":203,"middle":163,"inTarget":false}
+0 1538403747259 330 327 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":472,"topLeft":304,"bottomRight":415,"bottomLeft":203,"middle":164,"inTarget":false}
+0 1538403747425 333 397 mousemove //*[@id='rso']/div[1] {} {"topRight":507,"topLeft":361,"bottomRight":421,"bottomLeft":225,"middle":221,"inTarget":false}
+0 1538403748078 341 422 mousedown //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":516,"topLeft":386,"bottomRight":420,"bottomLeft":244,"middle":240,"inTarget":false}
+0 1538403748161 341 423 mouseup //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":516,"topLeft":387,"bottomRight":420,"bottomLeft":244,"middle":241,"inTarget":false}
+0 1538403748163 0 0 beforeunload / {} {}
+0 1538403748167 341 423 click //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":516,"topLeft":387,"bottomRight":420,"bottomLeft":244,"middle":241,"inTarget":false}
+0 1538403748376 334 423 mousemove //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":522,"topLeft":383,"bottomRight":427,"bottomLeft":238,"middle":243,"inTarget":false}
+0 1538403748558 0 0 unload / {} {}

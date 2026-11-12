@@ -1,0 +1,3 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486614149282 274 124 mousemove //*[@id='vs0p1c0'] {} {"topRight":471,"topLeft":148,"bottomRight":483,"bottomLeft":185,"middle":168,"inTarget":true}
+0 1486614149300 0 0 unload / {} {}

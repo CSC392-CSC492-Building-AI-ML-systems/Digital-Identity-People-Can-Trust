@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486857110654 0 0 load / {} {}
+0 1486857111115 703 349 mousemove //*[@id='rso']/div[2]/div/div/div[1]/div[2]/div[1]/div {} {"topRight":593,"topLeft":258,"bottomRight":541,"bottomLeft":88,"middle":335,"inTarget":false}
+0 1486857111267 696 57 mouseover //*[@id='searchform']/div/div {} {"topRight":550,"topLeft":106,"bottomRight":626,"bottomLeft":317,"middle":366,"inTarget":false}
+0 1486857111556 0 0 blur / {} {}
+0 1486857114418 0 0 focus / {} {}
+0 1486857114716 756 7 mouseover //*[@id='tsf']/div[2]/div[2] {} {"topRight":498,"topLeft":105,"bottomRight":602,"bottomLeft":355,"middle":345,"inTarget":false}
+0 1486857114868 456 105 mousemove //*[@id='tads'] {} {"topRight":788,"topLeft":334,"bottomRight":828,"bottomLeft":420,"middle":575,"inTarget":false}
+0 1486857115019 419 110 mousemove //*[@id='center_col'] {} {"topRight":825,"topLeft":371,"bottomRight":862,"bottomLeft":447,"middle":611,"inTarget":false}
+0 1486857115173 317 113 mouseover //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":927,"topLeft":473,"bottomRight":959,"bottomLeft":534,"middle":710,"inTarget":false}
+0 1486857115348 283 119 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":961,"topLeft":507,"bottomRight":991,"bottomLeft":561,"middle":743,"inTarget":false}
+0 1486857116718 281 121 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":963,"topLeft":509,"bottomRight":992,"bottomLeft":562,"middle":744,"inTarget":false}
+0 1486857117070 282 123 mousedown //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":962,"topLeft":508,"bottomRight":991,"bottomLeft":561,"middle":743,"inTarget":false}
+0 1486857117189 282 123 mouseup //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":962,"topLeft":508,"bottomRight":991,"bottomLeft":561,"middle":743,"inTarget":false}
+0 1486857117190 282 123 click //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":962,"topLeft":508,"bottomRight":991,"bottomLeft":561,"middle":743,"inTarget":false}
+0 1486857117191 0 0 beforeunload / {} {}
+0 1486857117334 0 0 unload / {} {}

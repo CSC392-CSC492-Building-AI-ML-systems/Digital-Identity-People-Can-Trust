@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1493139011652 0 0 load / {} {}
+0 1493139014864 0 0 focus / {} {}
+0 1493139015371 313 8 mouseover //*[@id='tsf']/div[2]/div[2] {} {"topRight":761,"topLeft":487,"bottomRight":833,"bottomLeft":593,"middle":656,"inTarget":false}
+0 1493139015572 354 156 mouseover //*[@id='rso']/div[1]/div/div/div/div {} {"topRight":716,"topLeft":439,"bottomRight":743,"bottomLeft":481,"middle":580,"inTarget":false}
+0 1493139015833 343 174 mouseover //*[@id='rso']/div[1]/div/div/div/div {} {"topRight":728,"topLeft":452,"bottomRight":748,"bottomLeft":484,"middle":589,"inTarget":false}
+0 1493139015991 150 118 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":918,"topLeft":640,"bottomRight":949,"bottomLeft":684,"middle":787,"inTarget":false}
+0 1493139016227 139 111 mousemove //*[@id='center_col'] {} {"topRight":929,"topLeft":651,"bottomRight":962,"bottomLeft":697,"middle":799,"inTarget":false}
+0 1493139016384 149 124 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":919,"topLeft":641,"bottomRight":949,"bottomLeft":683,"middle":788,"inTarget":false}
+0 1493139016539 156 127 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":912,"topLeft":634,"bottomRight":941,"bottomLeft":675,"middle":780,"inTarget":false}
+0 1493139016696 169 127 mousedown //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":899,"topLeft":621,"bottomRight":929,"bottomLeft":663,"middle":767,"inTarget":false}
+0 1493139016841 169 127 mouseup //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":899,"topLeft":621,"bottomRight":929,"bottomLeft":663,"middle":767,"inTarget":false}
+0 1493139016842 169 127 click //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":899,"topLeft":621,"bottomRight":929,"bottomLeft":663,"middle":767,"inTarget":false}
+0 1493139016842 0 0 beforeunload / {} {}
+0 1493139017100 173 129 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":895,"topLeft":617,"bottomRight":924,"bottomLeft":659,"middle":763,"inTarget":false}
+0 1493139017277 233 90 mousemove //*[@id='resultStats'] {} {"topRight":835,"topLeft":557,"bottomRight":878,"bottomLeft":619,"middle":711,"inTarget":false}
+0 1493139017283 0 0 unload / {} {}

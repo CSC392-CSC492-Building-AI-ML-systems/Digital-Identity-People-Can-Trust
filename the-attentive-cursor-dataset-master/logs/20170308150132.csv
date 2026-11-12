@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488981790283 0 0 load / {} {}
+0 1488981796550 296 388 mousemove //*[@id='rso']/div[1]/div[2]/div/div/div/div/cite {} {"topRight":533,"topLeft":333,"bottomRight":467,"bottomLeft":214,"middle":253,"inTarget":false}
+0 1488981796702 315 376 mousemove //*[@id='rso']/div[1]/div[2]/div/h3 {} {"topRight":510,"topLeft":333,"bottomRight":446,"bottomLeft":223,"middle":232,"inTarget":false}
+0 1488981796957 323 366 mousemove //*[@id='rso']/div[1]/div[2]/div/h3 {} {"topRight":498,"topLeft":330,"bottomRight":435,"bottomLeft":224,"middle":220,"inTarget":false}
+0 1488981797123 317 413 mousemove //*[@id='rso']/div[1]/div[2]/div/div/div/span {} {"topRight":529,"topLeft":366,"bottomRight":455,"bottomLeft":246,"middle":264,"inTarget":false}
+0 1488981797286 313 453 mousemove //*[@id='rso']/div[1] {} {"topRight":557,"topLeft":399,"bottomRight":474,"bottomLeft":271,"middle":302,"inTarget":false}
+0 1488981797694 312 467 mousemove //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981798345 312 467 mousedown //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981798576 312 467 mouseup //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981798577 0 0 beforeunload / {} {}
+0 1488981798579 312 467 click //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981798604 312 467 mousedown //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981798605 312 467 mouseup //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981798605 0 0 beforeunload / {} {}
+0 1488981798607 312 467 click //*[@id='rso']/div[1]/div[3]/div/h3/a {} {"topRight":567,"topLeft":411,"bottomRight":481,"bottomLeft":281,"middle":315,"inTarget":false}
+0 1488981799200 0 0 unload / {} {}

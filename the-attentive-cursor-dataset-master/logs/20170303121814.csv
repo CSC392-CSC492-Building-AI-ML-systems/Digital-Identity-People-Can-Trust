@@ -1,0 +1,3 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488539998080 833 285 mousemove //*[@id='rhs_block']/div[1]/div[1]/div/div[1]/div[2]/div[3]/div/div[3]/div/span/a {} {"topRight":193,"topLeft":729,"bottomRight":216,"bottomLeft":735,"middle":380,"inTarget":false}
+0 1488539998225 0 0 unload / {} {}

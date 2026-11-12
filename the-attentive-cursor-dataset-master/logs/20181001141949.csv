@@ -1,0 +1,15 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538396578593 283 459 mousemove //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1024,"topLeft":618,"bottomRight":962,"bottomLeft":508,"middle":751,"inTarget":false}
+0 1538396578713 0 0 load / {} {}
+0 1538396578885 307 476 mouseover //*[@id='rso']/div[3]/div[1]/div/div/div/div/cite {} {"topRight":1007,"topLeft":608,"bottomRight":937,"bottomLeft":483,"middle":731,"inTarget":false}
+0 1538396579050 299 480 mousemove //*[@id='rso']/div[3]/div[1]/div/div/div/div/cite {} {"topRight":1016,"topLeft":617,"bottomRight":945,"bottomLeft":491,"middle":740,"inTarget":false}
+0 1538396579200 295 468 mousemove //*[@id='rso']/div[3]/div[1]/div/div/div/div/cite {} {"topRight":1016,"topLeft":613,"bottomRight":949,"bottomLeft":496,"middle":741,"inTarget":false}
+0 1538396579392 294 462 mousemove //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1015,"topLeft":611,"bottomRight":951,"bottomLeft":497,"middle":741,"inTarget":false}
+0 1538396579585 293 459 mousemove //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1014,"topLeft":610,"bottomRight":952,"bottomLeft":498,"middle":741,"inTarget":false}
+0 1538396579766 293 459 mousedown //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1014,"topLeft":610,"bottomRight":952,"bottomLeft":498,"middle":741,"inTarget":false}
+0 1538396579849 293 459 mouseup //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1014,"topLeft":610,"bottomRight":952,"bottomLeft":498,"middle":741,"inTarget":false}
+0 1538396579850 293 459 click //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1014,"topLeft":610,"bottomRight":952,"bottomLeft":498,"middle":741,"inTarget":false}
+0 1538396579854 0 0 beforeunload / {} {}
+0 1538396580023 294 459 mousemove //*[@id='rso']/div[3]/div[1]/div/h3/a {} {"topRight":1013,"topLeft":609,"bottomRight":951,"bottomLeft":497,"middle":740,"inTarget":false}
+0 1538396580184 473 453 mousemove //*[@id='rso']/div[3]/div[1]/div/h3 {} {"topRight":845,"topLeft":470,"bottomRight":772,"bottomLeft":320,"middle":565,"inTarget":false}
+0 1538396580223 0 0 unload / {} {}

@@ -1,0 +1,11 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1536518181401 0 0 load / {} {}
+0 1536518181697 649 74 mousemove //*[@id='slim_appbar'] {} {"topRight":596,"topLeft":145,"bottomRight":729,"bottomLeft":445,"middle":432,"inTarget":false}
+0 1536518182320 0 0 blur / {} {}
+0 1536518194039 0 0 focus / {} {}
+0 1536518199621 754 19 mouseover //*[@id='sblsbb']/button {} {"topRight":498,"topLeft":94,"bottomRight":684,"bottomLeft":478,"middle":386,"inTarget":false}
+0 1536518199802 533 181 mousemove //*[@id='rso']/div[1]/div/div/div {} {"topRight":715,"topLeft":268,"bottomRight":778,"bottomLeft":407,"middle":499,"inTarget":false}
+0 1536518200070 530 180 mousemove //*[@id='rso']/div[1]/div/div/div {} {"topRight":718,"topLeft":270,"bottomRight":781,"bottomLeft":409,"middle":502,"inTarget":false}
+0 1536518200221 506 140 mousemove //*[@id='rso']/div[1]/div/div/div/div[1] {} {"topRight":739,"topLeft":286,"bottomRight":819,"bottomLeft":455,"middle":536,"inTarget":false}
+0 1536518200407 504 130 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":740,"topLeft":287,"bottomRight":826,"bottomLeft":464,"middle":541,"inTarget":false}
+0 1536518201404 504 130 mousedown //*[@id='rso']/div[1]/div/h3/a {} {"topRight":740,"topLeft":287,"bottomRight":826,"bottomLeft":464,"middle":541,"inTarget":false}

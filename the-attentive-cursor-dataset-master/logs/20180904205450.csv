@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1536087467674 0 0 load / {} {}
+0 1536087467849 400 311 mousemove //*[@id='tads']/ol/li/ul/li[2]/div {} {"topRight":433,"topLeft":344,"bottomRight":420,"bottomLeft":328,"middle":55,"inTarget":true}
+0 1536087468005 519 311 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":334,"topLeft":444,"bottomRight":317,"bottomLeft":432,"middle":67,"inTarget":true}
+0 1536087468487 522 311 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":332,"topLeft":447,"bottomRight":315,"bottomLeft":434,"middle":70,"inTarget":true}
+0 1536087468788 524 311 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":330,"topLeft":449,"bottomRight":313,"bottomLeft":436,"middle":72,"inTarget":true}
+0 1536087469188 525 303 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":324,"topLeft":446,"bottomRight":317,"bottomLeft":441,"middle":72,"inTarget":true}
+0 1536087469339 437 211 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":359,"topLeft":328,"bottomRight":443,"bottomLeft":419,"middle":87,"inTarget":true}
+0 1536087469489 422 177 mouseover //*[@id='tads']/ol/li/div[3] {} {"topRight":364,"topLeft":304,"bottomRight":477,"bottomLeft":432,"middle":124,"inTarget":true}
+0 1536087469671 398 148 mouseover //*[@id='tads']/ol/li/div[1] {} {"topRight":383,"topLeft":274,"bottomRight":514,"bottomLeft":439,"middle":159,"inTarget":true}
+0 1536087470303 382 120 mousedown //*[@id='vs0p1c0'] {} {"topRight":397,"topLeft":255,"bottomRight":545,"bottomLeft":452,"middle":191,"inTarget":true}
+0 1536087470410 382 120 mouseup //*[@id='vs0p1c0'] {} {"topRight":397,"topLeft":255,"bottomRight":545,"bottomLeft":452,"middle":191,"inTarget":true}
+0 1536087470410 382 120 click //*[@id='vs0p1c0'] {} {"topRight":397,"topLeft":255,"bottomRight":545,"bottomLeft":452,"middle":191,"inTarget":true}
+0 1536087470411 0 0 beforeunload / {} {}
+0 1536087470621 382 119 mousemove //*[@id='vs0p1c0'] {} {"topRight":396,"topLeft":255,"bottomRight":545,"bottomLeft":453,"middle":192,"inTarget":true}
+0 1536087470652 0 0 unload / {} {}

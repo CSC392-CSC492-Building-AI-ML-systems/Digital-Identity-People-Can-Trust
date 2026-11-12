@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1489732449626 0 0 load / {} {}
+0 1489732455883 0 0 focus / {} {}
+0 1489732456067 814 635 mouseover //*[@id='rcnt'] {} {"topRight":540,"topLeft":870,"bottomRight":404,"bottomLeft":793,"middle":600,"inTarget":false}
+0 1489732456227 593 213 mouseover //*[@id='tads']/ol/li/ul {} {"topRight":189,"topLeft":479,"bottomRight":153,"bottomLeft":466,"middle":163,"inTarget":true}
+0 1489732456382 369 200 mouseover //*[@id='tads']/ol/li/div[4]/span {} {"topRight":388,"topLeft":261,"bottomRight":377,"bottomLeft":244,"middle":74,"inTarget":true}
+0 1489732456533 308 161 mousemove //*[@id='tads']/ol/li/div[2] {} {"topRight":440,"topLeft":190,"bottomRight":443,"bottomLeft":195,"middle":128,"inTarget":true}
+0 1489732456689 296 134 mousemove //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":449,"topLeft":171,"bottomRight":460,"bottomLeft":197,"middle":144,"inTarget":true}
+0 1489732456845 302 130 mouseover //*[@id='vs0p1c0'] {} {"topRight":443,"topLeft":177,"bottomRight":455,"bottomLeft":204,"middle":139,"inTarget":true}
+0 1489732456995 302 132 mouseover //*[@id='tads']/ol/li/div[1]/cite/b[2] {} {"topRight":443,"topLeft":177,"bottomRight":454,"bottomLeft":203,"middle":139,"inTarget":true}
+0 1489732457149 305 143 mousemove //*[@id='tads']/ol/li/div[1]/cite/b[2] {} {"topRight":441,"topLeft":182,"bottomRight":449,"bottomLeft":200,"middle":133,"inTarget":true}
+0 1489732457362 312 133 mousemove //*[@id='tads']/ol/li/div[1]/cite/b[2] {} {"topRight":433,"topLeft":187,"bottomRight":444,"bottomLeft":211,"middle":129,"inTarget":true}
+0 1489732457519 315 129 mousedown //*[@id='vs0p1c0'] {} {"topRight":430,"topLeft":189,"bottomRight":442,"bottomLeft":216,"middle":127,"inTarget":true}
+0 1489732457678 315 129 mouseup //*[@id='vs0p1c0'] {} {"topRight":430,"topLeft":189,"bottomRight":442,"bottomLeft":216,"middle":127,"inTarget":true}
+0 1489732457679 315 129 click //*[@id='vs0p1c0'] {} {"topRight":430,"topLeft":189,"bottomRight":442,"bottomLeft":216,"middle":127,"inTarget":true}
+0 1489732457681 0 0 beforeunload / {} {}
+0 1489732459224 0 0 unload / {} {}

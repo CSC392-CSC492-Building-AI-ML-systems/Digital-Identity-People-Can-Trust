@@ -1,0 +1,8 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486593556266 0 0 load / {} {}
+0 1486593556520 269 117 mousedown //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":473,"topLeft":141,"bottomRight":616,"bottomLeft":418,"middle":253,"inTarget":true}
+0 1486593556623 268 116 mouseup //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":474,"topLeft":140,"bottomRight":617,"bottomLeft":419,"middle":255,"inTarget":true}
+0 1486593556624 268 116 click //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":474,"topLeft":140,"bottomRight":617,"bottomLeft":419,"middle":255,"inTarget":true}
+0 1486593556625 0 0 beforeunload / {} {}
+0 1486593556791 268 117 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":474,"topLeft":140,"bottomRight":616,"bottomLeft":418,"middle":254,"inTarget":true}
+0 1486593556895 0 0 unload / {} {}

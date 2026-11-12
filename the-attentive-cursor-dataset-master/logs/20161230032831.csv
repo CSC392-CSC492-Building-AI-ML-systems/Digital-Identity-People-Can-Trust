@@ -1,0 +1,12 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1483065007705 0 0 load / {} {}
+0 1483065007920 244 2 mouseover //*[@id='searchform']/div/div {} {"topRight":510,"topLeft":152,"bottomRight":575,"bottomLeft":307,"middle":271,"inTarget":false}
+0 1483065008080 268 140 mousemove //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":478,"topLeft":146,"bottomRight":498,"bottomLeft":202,"middle":176,"inTarget":true}
+0 1483065008240 268 135 mousemove //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":477,"topLeft":144,"bottomRight":499,"bottomLeft":206,"middle":178,"inTarget":true}
+0 1483065008448 264 122 mousemove //*[@id='vs0p1c0'] {} {"topRight":481,"topLeft":138,"bottomRight":507,"bottomLeft":213,"middle":186,"inTarget":true}
+0 1483065008608 258 119 mousedown //*[@id='vs0p1c0'] {} {"topRight":486,"topLeft":131,"bottomRight":514,"bottomLeft":212,"middle":193,"inTarget":true}
+0 1483065008738 258 119 mouseup //*[@id='vs0p1c0'] {} {"topRight":486,"topLeft":131,"bottomRight":514,"bottomLeft":212,"middle":193,"inTarget":true}
+0 1483065008739 258 119 click //*[@id='vs0p1c0'] {} {"topRight":486,"topLeft":131,"bottomRight":514,"bottomLeft":212,"middle":193,"inTarget":true}
+0 1483065008743 0 0 beforeunload / {} {}
+0 1483065008895 305 119 mousemove //*[@id='vs0p1c0'] {} {"topRight":439,"topLeft":178,"bottomRight":470,"bottomLeft":243,"middle":150,"inTarget":true}
+0 1483065009002 0 0 unload / {} {}

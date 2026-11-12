@@ -1,0 +1,11 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1482777936758 0 0 load / {} {}
+0 1482777936950 451 62 mousemove //*[@id='slim_appbar'] {} {"topRight":295,"topLeft":325,"bottomRight":351,"bottomLeft":376,"middle":116,"inTarget":false}
+0 1482777937231 351 106 mousemove //*[@id='tads']/ol/li {} {"topRight":393,"topLeft":223,"bottomRight":420,"bottomLeft":268,"middle":111,"inTarget":true}
+0 1482777937417 344 112 mousemove //*[@id='vs0p1c0'] {} {"topRight":400,"topLeft":216,"bottomRight":425,"bottomLeft":259,"middle":113,"inTarget":true}
+0 1482777937588 340 114 mousemove //*[@id='vs0p1c0'] {} {"topRight":404,"topLeft":212,"bottomRight":428,"bottomLeft":255,"middle":115,"inTarget":true}
+0 1482777938110 335 119 mousedown //*[@id='vs0p1c0'] {} {"topRight":409,"topLeft":208,"bottomRight":431,"bottomLeft":248,"middle":117,"inTarget":true}
+0 1482777938331 335 119 mouseup //*[@id='vs0p1c0'] {} {"topRight":409,"topLeft":208,"bottomRight":431,"bottomLeft":248,"middle":117,"inTarget":true}
+0 1482777938338 335 119 click //*[@id='vs0p1c0'] {} {"topRight":409,"topLeft":208,"bottomRight":431,"bottomLeft":248,"middle":117,"inTarget":true}
+0 1482777938360 0 0 beforeunload / {} {}
+0 1482777939293 0 0 unload / {} {}

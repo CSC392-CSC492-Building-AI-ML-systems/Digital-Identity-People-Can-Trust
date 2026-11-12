@@ -1,0 +1,11 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488299063912 0 0 load / {} {}
+0 1488299103261 0 0 focus / {} {}
+0 1488299103564 598 15 mouseover //*[@id='lst-ib'] {} {"topRight":169,"topLeft":478,"bottomRight":308,"bottomLeft":543,"middle":241,"inTarget":false}
+0 1488299103722 483 86 mousemove //*[@id='slim_appbar'] {} {"topRight":261,"topLeft":355,"bottomRight":329,"bottomLeft":407,"middle":117,"inTarget":false}
+0 1488299103877 451 113 mousemove //*[@id='vs0p1c0'] {} {"topRight":293,"topLeft":323,"bottomRight":340,"bottomLeft":366,"middle":81,"inTarget":true}
+0 1488299104157 448 117 mousedown //*[@id='vs0p1c0'] {} {"topRight":296,"topLeft":320,"bottomRight":341,"bottomLeft":362,"middle":77,"inTarget":true}
+0 1488299104304 448 117 mouseup //*[@id='vs0p1c0'] {} {"topRight":296,"topLeft":320,"bottomRight":341,"bottomLeft":362,"middle":77,"inTarget":true}
+0 1488299104305 448 117 click //*[@id='vs0p1c0'] {} {"topRight":296,"topLeft":320,"bottomRight":341,"bottomLeft":362,"middle":77,"inTarget":true}
+0 1488299104306 0 0 beforeunload / {} {}
+0 1488299105338 0 0 unload / {} {}
