@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486046229099 0 0 load / {} {}
+0 1486046233702 0 0 focus / {} {}
+0 1486046234026 620 3 mouseover //*[@id='searchform']/div/div {} {"topRight":632,"topLeft":199,"bottomRight":805,"bottomLeft":536,"middle":501,"inTarget":false}
+0 1486046234178 556 236 mouseover //*[@id='rso']/div[1]/div[2]/div/h3/a {} {"topRight":700,"topLeft":268,"bottomRight":741,"bottomLeft":361,"middle":467,"inTarget":false}
+0 1486046234482 506 329 mousemove //*[@id='rso'] {} {"topRight":771,"topLeft":361,"bottomRight":760,"bottomLeft":337,"middle":511,"inTarget":false}
+0 1486046234633 484 212 mousemove //*[@id='rso']/div[1] {} {"topRight":767,"topLeft":324,"bottomRight":817,"bottomLeft":428,"middle":542,"inTarget":false}
+0 1486046234785 790 181 mouseover //*[@id='rhs_block']/div {} {"topRight":460,"topLeft":75,"bottomRight":561,"bottomLeft":330,"middle":260,"inTarget":false}
+0 1486046234937 904 227 mousemove //*[@id='plarhs0'] {} {"topRight":361,"topLeft":166,"bottomRight":443,"bottomLeft":306,"middle":139,"inTarget":true}
+0 1486046235146 930 252 mousemove //*[@id='rhs_block']/div/div/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/a/span[3] {} {"topRight":346,"topLeft":202,"bottomRight":407,"bottomLeft":294,"middle":104,"inTarget":true}
+0 1486046235346 908 245 mousedown //*[@id='rhs_block']/div/div/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/a/span[3] {} {"topRight":364,"topLeft":182,"bottomRight":429,"bottomLeft":291,"middle":126,"inTarget":true}
+0 1486046235434 908 245 mouseup //*[@id='rhs_block']/div/div/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/a/span[3] {} {"topRight":364,"topLeft":182,"bottomRight":429,"bottomLeft":291,"middle":126,"inTarget":true}
+0 1486046235434 908 245 click //*[@id='rhs_block']/div/div/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/a/span[3] {} {"topRight":364,"topLeft":182,"bottomRight":429,"bottomLeft":291,"middle":126,"inTarget":true}
+0 1486046235434 0 0 beforeunload / {} {}
+0 1486046235585 891 262 mousemove //*[@id='rhs_block']/div/div/div[4]/div[1]/div[1]/div[1]/div[2]/div[1] {} {"topRight":386,"topLeft":186,"bottomRight":432,"bottomLeft":269,"middle":134,"inTarget":true}
+0 1486046235686 0 0 unload / {} {}

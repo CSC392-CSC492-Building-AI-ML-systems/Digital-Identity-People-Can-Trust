@@ -1,0 +1,15 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486805130358 0 0 load / {} {}
+0 1486805130515 388 647 mousemove //*[@id='rso'] {} {"topRight":647,"topLeft":600,"bottomRight":379,"bottomLeft":293,"middle":342,"inTarget":false}
+0 1486805130667 347 683 mousemove //*[@id='rso']/div[2]/div/div/div[1]/div[2]/div[1]/div/div/div {} {"topRight":699,"topLeft":617,"bottomRight":431,"bottomLeft":278,"middle":385,"inTarget":false}
+0 1486805130819 337 710 mousemove //*[@id='rso']/div[2]/div/div/div[1]/div[2]/div[1] {} {"topRight":727,"topLeft":639,"bottomRight":451,"bottomLeft":289,"middle":413,"inTarget":false}
+0 1486805130971 288 492 mouseover //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[3]/div[1]/div[3] {} {"topRight":596,"topLeft":418,"bottomRight":454,"bottomLeft":161,"middle":235,"inTarget":true}
+0 1486805131140 310 336 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[3]/div[1]/div[1] {} {"topRight":489,"topLeft":293,"bottomRight":466,"bottomLeft":252,"middle":128,"inTarget":true}
+0 1486805131291 190 411 mousemove //*[@id='platop2'] {} {"topRight":631,"topLeft":311,"bottomRight":561,"bottomLeft":118,"middle":266,"inTarget":true}
+0 1486805131459 181 425 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/a {} {"topRight":645,"topLeft":323,"bottomRight":568,"bottomLeft":101,"middle":279,"inTarget":true}
+0 1486805131931 180 428 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/a {} {"topRight":648,"topLeft":326,"bottomRight":568,"bottomLeft":98,"middle":282,"inTarget":true}
+0 1486805132075 200 420 mousedown //*[@id='platop2'] {} {"topRight":626,"topLeft":322,"bottomRight":550,"bottomLeft":116,"middle":260,"inTarget":true}
+0 1486805132211 200 420 mouseup //*[@id='platop2'] {} {"topRight":626,"topLeft":322,"bottomRight":550,"bottomLeft":116,"middle":260,"inTarget":true}
+0 1486805132212 200 420 click //*[@id='platop2'] {} {"topRight":626,"topLeft":322,"bottomRight":550,"bottomLeft":116,"middle":260,"inTarget":true}
+0 1486805132212 0 0 beforeunload / {} {}
+0 1486805132458 0 0 unload / {} {}

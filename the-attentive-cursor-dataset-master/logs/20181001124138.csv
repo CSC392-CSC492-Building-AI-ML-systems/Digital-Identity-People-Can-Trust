@@ -1,0 +1,13 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538390681562 0 0 load / {} {}
+0 1538390681787 0 0 focus / {} {}
+0 1538390681788 0 0 focus / {} {}
+0 1538390684744 0 0 blur / {} {}
+0 1538390687764 928 56 mouseover //*[@id='adblocker'] {} {"topRight":930,"topLeft":930,"bottomRight":930,"bottomLeft":930,"middle":930,"inTarget":false}
+0 1538390688075 596 7 mousemove //*[@id='adblocker'] {} {"topRight":596,"topLeft":596,"bottomRight":596,"bottomLeft":596,"middle":596,"inTarget":false}
+0 1538390688541 42 0 mouseover //*[@id='adblocker'] {} {"topRight":42,"topLeft":42,"bottomRight":42,"bottomLeft":42,"middle":42,"inTarget":false}
+0 1538390688810 36 3 mousemove //*[@id='adblocker'] {} {"topRight":36,"topLeft":36,"bottomRight":36,"bottomLeft":36,"middle":36,"inTarget":false}
+0 1538390689300 0 0 focus / {} {}
+0 1538390689491 0 0 beforeunload / {} {}
+0 1538390690060 0 0 blur / {} {}
+0 1538390690219 0 0 unload / {} {}

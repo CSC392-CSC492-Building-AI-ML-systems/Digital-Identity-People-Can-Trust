@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1493122325127 0 0 load / {} {}
+0 1493122329476 486 252 mousemove //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":299,"topLeft":389,"bottomRight":259,"bottomLeft":359,"middle":99,"inTarget":false}
+0 1493122334211 487 250 mousemove //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":298,"topLeft":389,"bottomRight":258,"bottomLeft":359,"middle":98,"inTarget":false}
+0 1493122334364 302 192 mouseover //*[@id='tads']/ol/li/div[4] {} {"topRight":451,"topLeft":197,"bottomRight":444,"bottomLeft":179,"middle":136,"inTarget":true}
+0 1493122334522 238 150 mousemove //*[@id='tads']/ol/li/div[2]/a {} {"topRight":508,"topLeft":121,"bottomRight":513,"bottomLeft":138,"middle":199,"inTarget":true}
+0 1493122334716 235 135 mousemove //*[@id='tads']/ol/li/div[1]/cite/b {} {"topRight":510,"topLeft":113,"bottomRight":518,"bottomLeft":145,"middle":203,"inTarget":true}
+0 1493122334932 235 130 mouseover //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":510,"topLeft":111,"bottomRight":519,"bottomLeft":149,"middle":204,"inTarget":true}
+0 1493122335116 237 125 mousemove //*[@id='vs0p1c0'] {} {"topRight":508,"topLeft":112,"bottomRight":518,"bottomLeft":153,"middle":203,"inTarget":true}
+0 1493122335389 237 125 mousedown //*[@id='vs0p1c0'] {} {"topRight":508,"topLeft":112,"bottomRight":518,"bottomLeft":153,"middle":203,"inTarget":true}
+0 1493122335554 237 125 mouseup //*[@id='vs0p1c0'] {} {"topRight":508,"topLeft":112,"bottomRight":518,"bottomLeft":153,"middle":203,"inTarget":true}
+0 1493122335556 237 125 click //*[@id='vs0p1c0'] {} {"topRight":508,"topLeft":112,"bottomRight":518,"bottomLeft":153,"middle":203,"inTarget":true}
+0 1493122335559 0 0 beforeunload / {} {}
+0 1493122336028 238 125 mousemove //*[@id='vs0p1c0'] {} {"topRight":507,"topLeft":113,"bottomRight":517,"bottomLeft":154,"middle":202,"inTarget":true}
+0 1493122336195 298 131 mousemove //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":447,"topLeft":173,"bottomRight":458,"bottomLeft":198,"middle":142,"inTarget":true}
+0 1493122336292 0 0 unload / {} {}

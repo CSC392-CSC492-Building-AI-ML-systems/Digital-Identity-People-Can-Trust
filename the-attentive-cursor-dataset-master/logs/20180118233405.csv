@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1516314978092 0 0 load / {} {}
+0 1516314978246 471 223 mousemove //*[@id='platop1'] {} {"topRight":295,"topLeft":362,"bottomRight":395,"bottomLeft":448,"middle":93,"inTarget":true}
+0 1516314978588 472 224 mousemove //*[@id='platop1'] {} {"topRight":295,"topLeft":364,"bottomRight":394,"bottomLeft":448,"middle":92,"inTarget":true}
+0 1516314980063 473 224 mousemove //*[@id='platop1'] {} {"topRight":294,"topLeft":365,"bottomRight":393,"bottomLeft":449,"middle":93,"inTarget":true}
+0 1516314980222 530 270 mouseover //*[@id='tvcap']/div/div/div[2]/div[1]/div[2]/div[1]/div[2]/div[2] {} {"topRight":268,"topLeft":434,"bottomRight":321,"bottomLeft":469,"middle":103,"inTarget":true}
+0 1516314980395 0 0 scroll / {} {}
+0 1516314980558 537 669 mouseover //*[@id='rso']/div/div[2]/div/div/div/span {} {"topRight":599,"topLeft":696,"bottomRight":259,"bottomLeft":438,"middle":375,"inTarget":false}
+0 1516314983197 536 669 mousemove //*[@id='rso']/div/div[2]/div/div/div/span {} {"topRight":600,"topLeft":695,"bottomRight":260,"bottomLeft":438,"middle":374,"inTarget":false}
+0 1516314983372 486 524 mousemove //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":490,"topLeft":550,"bottomRight":256,"bottomLeft":358,"middle":221,"inTarget":false}
+0 1516314983569 477 507 mousemove //*[@id='tvcap']/div {} {"topRight":481,"topLeft":532,"bottomRight":265,"bottomLeft":349,"middle":203,"inTarget":false}
+0 1516314983723 473 525 mousemove //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":498,"topLeft":543,"bottomRight":269,"bottomLeft":345,"middle":220,"inTarget":false}
+0 1516314983823 469 531 mousedown //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":505,"topLeft":545,"bottomRight":274,"bottomLeft":342,"middle":225,"inTarget":false}
+0 1516314983954 469 533 mouseup //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":507,"topLeft":546,"bottomRight":274,"bottomLeft":342,"middle":227,"inTarget":false}
+0 1516314983955 469 533 click //*[@id='rso']/div/div[1]/div/h3/a {} {"topRight":507,"topLeft":546,"bottomRight":274,"bottomLeft":342,"middle":227,"inTarget":false}
+0 1516314983956 0 0 beforeunload / {} {}
+0 1516314984157 0 0 unload / {} {}

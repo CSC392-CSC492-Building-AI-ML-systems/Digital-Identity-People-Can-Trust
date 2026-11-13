@@ -1,0 +1,6 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488851250764 0 0 load / {} {}
+0 1488851269966 0 0 focus / {} {}
+0 1488851270328 595 6 mouseover //*[@id='tsf']/div[2]/div[2] {} {"topRight":178,"topLeft":478,"bottomRight":512,"bottomLeft":677,"middle":336,"inTarget":false}
+0 1488851270478 368 258 mousemove //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div[1] {} {"topRight":404,"topLeft":284,"bottomRight":443,"bottomLeft":338,"middle":80,"inTarget":true}
+0 1488851270628 242 261 mouseover //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[1] {} {"topRight":523,"topLeft":192,"bottomRight":552,"bottomLeft":261,"middle":197,"inTarget":true}

@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486582760713 0 0 load / {} {}
+0 1486582763999 0 0 focus / {} {}
+0 1486582764150 427 390 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":424,"topLeft":412,"bottomRight":337,"bottomLeft":323,"middle":82,"inTarget":true}
+0 1486582764327 455 375 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":393,"topLeft":423,"bottomRight":318,"bottomLeft":354,"middle":69,"inTarget":true}
+0 1486582764512 344 313 mouseover //*[@id='tvcap']/div/div/div[2]/div[1]/div[2]/div[1]/div[3] {} {"topRight":449,"topLeft":299,"bottomRight":445,"bottomLeft":293,"middle":91,"inTarget":true}
+0 1486582764663 273 138 mouseover //*[@id='tvcap']/div/div {} {"topRight":470,"topLeft":148,"bottomRight":599,"bottomLeft":400,"middle":235,"inTarget":true}
+0 1486582764927 264 116 mousedown //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":478,"topLeft":136,"bottomRight":620,"bottomLeft":418,"middle":257,"inTarget":true}
+0 1486582765031 264 116 mouseup //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":478,"topLeft":136,"bottomRight":620,"bottomLeft":418,"middle":257,"inTarget":true}
+0 1486582765032 264 116 click //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":478,"topLeft":136,"bottomRight":620,"bottomLeft":418,"middle":257,"inTarget":true}
+0 1486582765032 0 0 beforeunload / {} {}
+0 1486582766326 264 116 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":478,"topLeft":136,"bottomRight":620,"bottomLeft":418,"middle":257,"inTarget":true}
+0 1486582767364 264 118 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":478,"topLeft":137,"bottomRight":619,"bottomLeft":416,"middle":256,"inTarget":true}
+0 1486582767558 267 142 mousemove //*[@id='tvcap']/div/div {} {"topRight":476,"topLeft":144,"bottomRight":601,"bottomLeft":394,"middle":237,"inTarget":true}
+0 1486582767713 372 208 mousemove //*[@id='tvcap']/div/div/div[2]/div[1]/div[2]/div[1]/div[1] {} {"topRight":384,"topLeft":264,"bottomRight":478,"bottomLeft":389,"middle":119,"inTarget":true}
+0 1486582767912 374 207 mousemove //*[@id='tvcap']/div/div/div[2]/div[1]/div[2]/div[1]/div[1] {} {"topRight":382,"topLeft":266,"bottomRight":477,"bottomLeft":391,"middle":118,"inTarget":true}
+0 1486582767921 0 0 unload / {} {}

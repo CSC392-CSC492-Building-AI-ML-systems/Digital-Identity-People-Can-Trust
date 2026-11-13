@@ -1,0 +1,9 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1483133998490 0 0 load / {} {}
+0 1483133998644 267 114 mousemove //*[@id='vs0p1c0'] {} {"topRight":477,"topLeft":140,"bottomRight":488,"bottomLeft":174,"middle":175,"inTarget":true}
+0 1483133998933 267 129 mousemove //*[@id='vs0p1c0'] {} {"topRight":478,"topLeft":142,"bottomRight":485,"bottomLeft":166,"middle":172,"inTarget":true}
+0 1483133998997 267 129 mousedown //*[@id='vs0p1c0'] {} {"topRight":478,"topLeft":142,"bottomRight":485,"bottomLeft":166,"middle":172,"inTarget":true}
+0 1483133999125 267 129 mouseup //*[@id='vs0p1c0'] {} {"topRight":478,"topLeft":142,"bottomRight":485,"bottomLeft":166,"middle":172,"inTarget":true}
+0 1483133999126 267 129 click //*[@id='vs0p1c0'] {} {"topRight":478,"topLeft":142,"bottomRight":485,"bottomLeft":166,"middle":172,"inTarget":true}
+0 1483133999127 0 0 beforeunload / {} {}
+0 1483133999369 0 0 unload / {} {}

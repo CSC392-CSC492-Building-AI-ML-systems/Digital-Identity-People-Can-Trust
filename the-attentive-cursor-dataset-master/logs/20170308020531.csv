@@ -1,0 +1,8 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1488935216549 0 0 focus / {} {}
+0 1488935216550 0 0 load / {} {}
+0 1488935217101 479 1 mousemove //*[@id='searchform']/div/div {} {"topRight":283,"topLeft":365,"bottomRight":403,"bottomLeft":464,"middle":206,"inTarget":false}
+0 1488935218656 0 0 blur / {} {}
+0 1488935218670 0 0 focus / {} {}
+0 1488935218800 0 0 beforeunload / {} {}
+0 1488935218802 0 0 unload / {} {}

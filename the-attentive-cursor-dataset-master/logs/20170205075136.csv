@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486277597347 0 0 load / {} {}
+0 1486277597939 0 0 focus / {} {}
+0 1486277598235 431 4 mouseover //*[@id='searchform']/div/div {} {"topRight":645,"topLeft":373,"bottomRight":688,"bottomLeft":443,"middle":530,"inTarget":false}
+0 1486277598390 451 115 mousemove //*[@id='rso']/div/div[1]/div/h3 {} {"topRight":617,"topLeft":339,"bottomRight":635,"bottomLeft":370,"middle":483,"inTarget":false}
+0 1486277598543 449 124 mousemove //*[@id='rso']/div/div[1]/div/h3 {} {"topRight":619,"topLeft":341,"bottomRight":634,"bottomLeft":368,"middle":484,"inTarget":false}
+0 1486277598694 399 140 mousemove //*[@id='rso']/div/div[1]/div/div/div/div[1]/div {} {"topRight":670,"topLeft":392,"bottomRight":680,"bottomLeft":410,"middle":532,"inTarget":false}
+0 1486277598846 561 188 mouseover //*[@id='rso']/div/div[1]/div/div/div/div[2] {} {"topRight":514,"topLeft":243,"bottomRight":513,"bottomLeft":241,"middle":368,"inTarget":false}
+0 1486277598998 912 181 mousemove //*[@id='rhs_block']/div/div/div[4]/div/table/tbody/tr/td[2]/div/div[1]/a {} {"topRight":173,"topLeft":143,"bottomRight":176,"bottomLeft":147,"middle":17,"inTarget":true}
+0 1486277599150 920 147 mousemove //*[@id='rhs_block']/div/div {} {"topRight":154,"topLeft":136,"bottomRight":188,"bottomLeft":174,"middle":39,"inTarget":true}
+0 1486277599302 934 147 mousemove //*[@id='rhs_block']/div/div {} {"topRight":140,"topLeft":150,"bottomRight":177,"bottomLeft":185,"middle":38,"inTarget":true}
+0 1486277599486 948 159 mousedown //*[@id='rhs_block']/div/div/div[4]/div/table/tbody/tr/td[2]/div/div[1]/a {} {"topRight":131,"topLeft":167,"bottomRight":159,"bottomLeft":189,"middle":32,"inTarget":true}
+0 1486277599582 948 159 mouseup //*[@id='rhs_block']/div/div/div[4]/div/table/tbody/tr/td[2]/div/div[1]/a {} {"topRight":131,"topLeft":167,"bottomRight":159,"bottomLeft":189,"middle":32,"inTarget":true}
+0 1486277599583 0 0 beforeunload / {} {}
+0 1486277599585 948 159 click //*[@id='rhs_block']/div/div/div[4]/div/table/tbody/tr/td[2]/div/div[1]/a {} {"topRight":131,"topLeft":167,"bottomRight":159,"bottomLeft":189,"middle":32,"inTarget":true}
+0 1486277599744 919 172 mousemove //*[@id='rhs_block']/div/div/div[4]/div/table/tbody/tr/td[2]/div/div[1]/a {} {"topRight":163,"topLeft":145,"bottomRight":175,"bottomLeft":158,"middle":16,"inTarget":true}
+0 1486277599844 0 0 unload / {} {}

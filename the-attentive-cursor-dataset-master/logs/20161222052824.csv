@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1482384660882 0 0 load / {} {}
+0 1482384661032 348 196 mouseover //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[3]/div[1]/div[1] {} {"topRight":406,"topLeft":238,"bottomRight":415,"bottomLeft":253,"middle":90,"inTarget":true}
+0 1482384661188 277 313 mouseover //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div {} {"topRight":511,"topLeft":255,"bottomRight":467,"bottomLeft":149,"middle":188,"inTarget":true}
+0 1482384661464 301 364 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div[1]/cite {} {"topRight":513,"topLeft":311,"bottomRight":445,"bottomLeft":179,"middle":203,"inTarget":false}
+0 1482384661772 304 364 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div[1]/cite {} {"topRight":510,"topLeft":312,"bottomRight":442,"bottomLeft":181,"middle":201,"inTarget":false}
+0 1482384661926 320 332 mouseover //*[@id='tads'] {} {"topRight":480,"topLeft":297,"bottomRight":424,"bottomLeft":192,"middle":166,"inTarget":false}
+0 1482384662083 332 309 mousemove //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1] {} {"topRight":459,"topLeft":288,"bottomRight":412,"bottomLeft":204,"middle":142,"inTarget":true}
+0 1482384662240 344 234 mouseover //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[3]/div[1] {} {"topRight":420,"topLeft":251,"bottomRight":409,"bottomLeft":232,"middle":94,"inTarget":true}
+0 1482384662393 309 164 mousemove //*[@id='platop1'] {} {"topRight":439,"topLeft":190,"bottomRight":462,"bottomLeft":239,"middle":136,"inTarget":true}
+0 1482384662543 306 148 mousemove //*[@id='platop1'] {} {"topRight":440,"topLeft":183,"bottomRight":471,"bottomLeft":248,"middle":145,"inTarget":true}
+0 1482384663093 297 117 mousedown //*[@id='tvcap']/div[1]/div[2]/div/h3/a/span {} {"topRight":447,"topLeft":169,"bottomRight":491,"bottomLeft":264,"middle":169,"inTarget":true}
+0 1482384663292 297 117 mouseup //*[@id='tvcap']/div[1]/div[2]/div/h3/a/span {} {"topRight":447,"topLeft":169,"bottomRight":491,"bottomLeft":264,"middle":169,"inTarget":true}
+0 1482384663293 297 117 click //*[@id='tvcap']/div[1]/div[2]/div/h3/a/span {} {"topRight":447,"topLeft":169,"bottomRight":491,"bottomLeft":264,"middle":169,"inTarget":true}
+0 1482384663295 0 0 beforeunload / {} {}
+0 1482384663479 0 0 unload / {} {}

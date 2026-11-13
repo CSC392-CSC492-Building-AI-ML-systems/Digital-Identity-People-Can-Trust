@@ -1,0 +1,8 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1516929568517 0 0 load / {} {}
+0 1516929571992 300 250 mousedown //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[2]/div[1]/div[2]/div[1]/a {} {"topRight":467,"topLeft":224,"bottomRight":450,"bottomLeft":186,"middle":141,"inTarget":true}
+0 1516929572073 300 250 mouseup //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[2]/div[1]/div[2]/div[1]/a {} {"topRight":467,"topLeft":224,"bottomRight":450,"bottomLeft":186,"middle":141,"inTarget":true}
+0 1516929572074 300 250 click //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[2]/div[1]/div[2]/div[1]/a {} {"topRight":467,"topLeft":224,"bottomRight":450,"bottomLeft":186,"middle":141,"inTarget":true}
+0 1516929572075 0 0 beforeunload / {} {}
+0 1516929572287 314 238 mousemove //*[@id='uid_WD69HAAC6R0KFM2HoQbsnA_0']/div/div/div/div[1]/div[2]/div[1]/div[2]/div[1]/a {} {"topRight":450,"topLeft":228,"bottomRight":438,"bottomLeft":204,"middle":124,"inTarget":true}
+0 1516929572450 0 0 unload / {} {}

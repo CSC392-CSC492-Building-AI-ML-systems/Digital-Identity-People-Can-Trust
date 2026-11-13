@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1491299741844 0 0 load / {} {}
+0 1491299764773 0 0 focus / {} {}
+0 1491299765087 322 23 mouseover //*[@id='lst-ib'] {} {"topRight":428,"topLeft":211,"bottomRight":644,"bottomLeft":525,"middle":307,"inTarget":false}
+0 1491299765239 269 205 mousemove //*[@id='platop0'] {} {"topRight":483,"topLeft":172,"bottomRight":563,"bottomLeft":337,"middle":196,"inTarget":true}
+0 1491299765389 250 173 mousemove //*[@id='platop0'] {} {"topRight":497,"topLeft":139,"bottomRight":597,"bottomLeft":359,"middle":229,"inTarget":true}
+0 1491299765627 276 128 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":467,"topLeft":150,"bottomRight":603,"bottomLeft":411,"middle":241,"inTarget":true}
+0 1491299765754 277 127 mousedown //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":465,"topLeft":150,"bottomRight":603,"bottomLeft":412,"middle":241,"inTarget":true}
+0 1491299765853 277 127 mouseup //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":465,"topLeft":150,"bottomRight":603,"bottomLeft":412,"middle":241,"inTarget":true}
+0 1491299765854 277 127 click //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":465,"topLeft":150,"bottomRight":603,"bottomLeft":412,"middle":241,"inTarget":true}
+0 1491299765855 0 0 beforeunload / {} {}
+0 1491299766599 277 127 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":465,"topLeft":150,"bottomRight":603,"bottomLeft":412,"middle":241,"inTarget":true}
+0 1491299766841 278 127 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":464,"topLeft":151,"bottomRight":602,"bottomLeft":412,"middle":240,"inTarget":true}
+0 1491299767005 333 123 mousemove //*[@id='tvcap']/div/div/div[1]/h3/a/span {} {"topRight":409,"topLeft":206,"bottomRight":564,"bottomLeft":439,"middle":212,"inTarget":true}
+0 1491299767158 335 132 mouseover //*[@id='tvcap']/div/div/div[1] {} {"topRight":408,"topLeft":209,"bottomRight":556,"bottomLeft":432,"middle":203,"inTarget":true}
+0 1491299767322 344 141 mousemove //*[@id='tvcap']/div/div {} {"topRight":400,"topLeft":219,"bottomRight":543,"bottomLeft":428,"middle":191,"inTarget":true}
+0 1491299767452 0 0 unload / {} {}

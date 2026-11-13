@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1483065042752 0 0 load / {} {}
+0 1483065045539 0 0 focus / {} {}
+0 1483065045741 673 4 mouseover //*[@id='searchform']/div/div {} {"topRight":119,"topLeft":553,"bottomRight":291,"bottomLeft":614,"middle":303,"inTarget":false}
+0 1483065045897 162 281 mouseover //*[@id='tads'] {} {"topRight":609,"topLeft":184,"bottomRight":582,"bottomLeft":34,"middle":288,"inTarget":false}
+0 1483065046056 154 253 mousemove //*[@id='tads']/ol/li/ul {} {"topRight":610,"topLeft":155,"bottomRight":591,"bottomLeft":42,"middle":288,"inTarget":true}
+0 1483065046211 208 165 mouseover //*[@id='tads']/ol/li/div[2] {} {"topRight":540,"topLeft":103,"bottomRight":549,"bottomLeft":145,"middle":230,"inTarget":true}
+0 1483065046393 221 132 mousemove //*[@id='tads']/ol/li/div[1]/cite {} {"topRight":524,"topLeft":98,"bottomRight":545,"bottomLeft":180,"middle":223,"inTarget":true}
+0 1483065046641 230 108 mousedown //*[@id='tads']/ol/li {} {"topRight":514,"topLeft":102,"bottomRight":544,"bottomLeft":205,"middle":223,"inTarget":true}
+0 1483065046752 230 108 mouseup //*[@id='tads']/ol/li {} {"topRight":514,"topLeft":102,"bottomRight":544,"bottomLeft":205,"middle":223,"inTarget":true}
+0 1483065046752 230 108 click //*[@id='tads']/ol/li {} {"topRight":514,"topLeft":102,"bottomRight":544,"bottomLeft":205,"middle":223,"inTarget":true}
+0 1483065046920 234 119 mousemove //*[@id='vs0p1c0'] {} {"topRight":510,"topLeft":108,"bottomRight":537,"bottomLeft":198,"middle":215,"inTarget":true}
+0 1483065046976 234 120 mousedown //*[@id='vs0p1c0'] {} {"topRight":510,"topLeft":108,"bottomRight":536,"bottomLeft":197,"middle":215,"inTarget":true}
+0 1483065047064 234 120 mouseup //*[@id='vs0p1c0'] {} {"topRight":510,"topLeft":108,"bottomRight":536,"bottomLeft":197,"middle":215,"inTarget":true}
+0 1483065047065 234 120 click //*[@id='vs0p1c0'] {} {"topRight":510,"topLeft":108,"bottomRight":536,"bottomLeft":197,"middle":215,"inTarget":true}
+0 1483065047066 0 0 beforeunload / {} {}
+0 1483065047314 0 0 unload / {} {}

@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1487869859065 0 0 load / {} {}
+0 1487869862076 0 0 focus / {} {}
+0 1487869862855 642 2 mouseover //*[@id='searchform']/div/div {} {"topRight":611,"topLeft":181,"bottomRight":913,"bottomLeft":702,"middle":545,"inTarget":false}
+0 1487869863005 589 105 mousemove //*[@id='tads'] {} {"topRight":655,"topLeft":201,"bottomRight":877,"bottomLeft":617,"middle":518,"inTarget":false}
+0 1487869863158 585 171 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div {} {"topRight":662,"topLeft":215,"bottomRight":838,"bottomLeft":556,"middle":488,"inTarget":false}
+0 1487869863677 584 173 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div {} {"topRight":663,"topLeft":217,"bottomRight":837,"bottomLeft":555,"middle":488,"inTarget":false}
+0 1487869863830 537 154 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/span/em[2] {} {"topRight":709,"topLeft":258,"bottomRight":886,"bottomLeft":591,"middle":538,"inTarget":false}
+0 1487869863980 248 94 mousemove //*[@id='resultStats'] {} {"topRight":996,"topLeft":542,"bottomRight":1160,"bottomLeft":804,"middle":827,"inTarget":false}
+0 1487869864213 228 95 mousemove //*[@id='resultStats'] {} {"topRight":1016,"topLeft":562,"bottomRight":1176,"bottomLeft":817,"middle":845,"inTarget":false}
+0 1487869864364 234 117 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":1010,"topLeft":556,"bottomRight":1160,"bottomLeft":797,"middle":832,"inTarget":false}
+0 1487869864827 234 119 mousedown //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":1010,"topLeft":556,"bottomRight":1159,"bottomLeft":796,"middle":831,"inTarget":false}
+0 1487869864965 234 119 mouseup //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":1010,"topLeft":556,"bottomRight":1159,"bottomLeft":796,"middle":831,"inTarget":false}
+0 1487869864966 234 119 click //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":1010,"topLeft":556,"bottomRight":1159,"bottomLeft":796,"middle":831,"inTarget":false}
+0 1487869864967 0 0 beforeunload / {} {}
+0 1487869865131 0 0 unload / {} {}

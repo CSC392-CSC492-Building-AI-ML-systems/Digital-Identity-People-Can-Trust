@@ -1,0 +1,14 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538392426438 0 0 load / {} {}
+0 1538392427176 311 501 mousemove //*[@id='tvcap']/div/div/div[2]/div[1]/div[3]/div[1]/div[3] {} {"topRight":585,"topLeft":435,"bottomRight":431,"bottomLeft":183,"middle":229,"inTarget":true}
+0 1538392427425 311 500 mousemove //*[@id='tvcap']/div/div/div[2]/div[1]/div[3]/div[1]/div[3] {} {"topRight":584,"topLeft":434,"bottomRight":431,"bottomLeft":183,"middle":228,"inTarget":true}
+0 1538392427588 273 439 mouseover //*[@id='tvcap']/div/div/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/a {} {"topRight":575,"topLeft":363,"bottomRight":474,"bottomLeft":162,"middle":208,"inTarget":true}
+0 1538392427753 257 409 mousemove //*[@id='platop2'] {} {"topRight":572,"topLeft":329,"bottomRight":496,"bottomLeft":164,"middle":204,"inTarget":true}
+0 1538392427903 239 370 mousemove //*[@id='platop2'] {} {"topRight":568,"topLeft":286,"bottomRight":522,"bottomLeft":179,"middle":205,"inTarget":true}
+0 1538392428069 223 315 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":560,"topLeft":230,"bottomRight":555,"bottomLeft":218,"middle":212,"inTarget":true}
+0 1538392428221 219 277 mouseover //*[@id='tvcap']/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[2] {} {"topRight":550,"topLeft":194,"bottomRight":573,"bottomLeft":251,"middle":218,"inTarget":true}
+0 1538392428646 216 247 mousedown //*[@id='tvcap']/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/a {} {"topRight":545,"topLeft":166,"bottomRight":589,"bottomLeft":278,"middle":227,"inTarget":true}
+0 1538392428762 216 247 mouseup //*[@id='tvcap']/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/a {} {"topRight":545,"topLeft":166,"bottomRight":589,"bottomLeft":278,"middle":227,"inTarget":true}
+0 1538392428763 216 247 click //*[@id='tvcap']/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/a {} {"topRight":545,"topLeft":166,"bottomRight":589,"bottomLeft":278,"middle":227,"inTarget":true}
+0 1538392428764 0 0 beforeunload / {} {}
+0 1538392429117 0 0 unload / {} {}

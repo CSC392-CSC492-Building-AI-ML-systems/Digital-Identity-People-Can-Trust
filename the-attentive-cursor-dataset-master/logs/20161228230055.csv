@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1482962557099 0 0 load / {} {}
+0 1482962558221 186 36 mouseover //*[@id='lst-ib'] {} {"topRight":560,"topLeft":91,"bottomRight":729,"bottomLeft":476,"middle":368,"inTarget":false}
+0 1482962558493 536 496 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":441,"topLeft":564,"bottomRight":206,"bottomLeft":408,"middle":214,"inTarget":true}
+0 1482962558651 582 434 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":365,"topLeft":560,"bottomRight":176,"bottomLeft":460,"middle":194,"inTarget":true}
+0 1482962559528 766 376 mousemove //*[@id='rcnt'] {} {"topRight":271,"topLeft":693,"bottomRight":134,"bottomLeft":652,"middle":338,"inTarget":false}
+0 1482962559682 412 721 mousemove //*[@id='rso']/div/div[3]/div/h3/a {} {"topRight":698,"topLeft":677,"bottomRight":393,"bottomLeft":355,"middle":415,"inTarget":false}
+0 1482962559946 402 722 mousemove //*[@id='rso']/div/div[3]/div/h3/a {} {"topRight":704,"topLeft":674,"bottomRight":402,"bottomLeft":348,"middle":416,"inTarget":false}
+0 1482962560868 0 0 blur / {} {}
+0 1482962563568 0 0 focus / {} {}
+0 1482962564784 308 678 mouseover //*[@id='rso']/div/div[2]/div/div/div/span {} {"topRight":718,"topLeft":600,"bottomRight":466,"bottomLeft":248,"middle":392,"inTarget":false}
+0 1482962564939 688 280 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":182,"topLeft":586,"bottomRight":234,"bottomLeft":605,"middle":254,"inTarget":true}
+0 1482962565357 708 272 mousemove //*[@id='tvcap']/div/div/div[2]/div[1] {} {"topRight":169,"topLeft":603,"bottomRight":238,"bottomLeft":626,"middle":275,"inTarget":true}
+0 1482962565515 977 134 mouseover //*[@id='rcnt'] {} {"topRight":237,"topLeft":849,"bottomRight":442,"bottomLeft":928,"middle":569,"inTarget":false}
+0 1482962565887 993 112 mouseover //*[@id='rhs_block'] {} {"topRight":251,"topLeft":865,"bottomRight":469,"bottomLeft":951,"middle":591,"inTarget":false}
+0 1482962567175 0 0 beforeunload / {} {}
+0 1482962567176 0 0 unload / {} {}

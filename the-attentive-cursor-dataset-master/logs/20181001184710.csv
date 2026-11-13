@@ -1,0 +1,3 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538412618973 327 150 mousemove //*[@id='rso']/div[1]/div/div[1]/div/h3/a {} {"topRight":947,"topLeft":493,"bottomRight":976,"bottomLeft":546,"middle":728,"inTarget":false}
+0 1538412620404 0 0 unload / {} {}

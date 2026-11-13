@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1516281213927 0 0 load / {} {}
+0 1516281214093 838 197 mousemove //*[@id='plarhs0'] {} {"topRight":416,"topLeft":103,"bottomRight":504,"bottomLeft":303,"middle":207,"inTarget":true}
+0 1516281214344 834 183 mousemove //*[@id='plarhs0'] {} {"topRight":417,"topLeft":89,"bottomRight":516,"bottomLeft":316,"middle":218,"inTarget":true}
+0 1516281214495 707 99 mouseover //*[@id='slim_appbar'] {} {"topRight":537,"topLeft":83,"bottomRight":668,"bottomLeft":406,"middle":370,"inTarget":false}
+0 1516281214669 653 34 mouseover //*[@id='lst-ib'] {} {"topRight":595,"topLeft":155,"bottomRight":750,"bottomLeft":482,"middle":451,"inTarget":false}
+0 1516281214820 508 63 mouseover //*[@id='slim_appbar'] {} {"topRight":737,"topLeft":285,"bottomRight":854,"bottomLeft":517,"middle":562,"inTarget":false}
+0 1516281214993 438 119 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":806,"topLeft":352,"bottomRight":890,"bottomLeft":516,"middle":607,"inTarget":false}
+0 1516281215170 434 120 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":810,"topLeft":356,"bottomRight":893,"bottomLeft":518,"middle":610,"inTarget":false}
+0 1516281215469 433 120 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":811,"topLeft":357,"bottomRight":894,"bottomLeft":518,"middle":611,"inTarget":false}
+0 1516281216496 433 120 mousedown //*[@id='rso']/div[1]/div/h3/a {} {"topRight":811,"topLeft":357,"bottomRight":894,"bottomLeft":518,"middle":611,"inTarget":false}
+0 1516281216623 433 120 mouseup //*[@id='rso']/div[1]/div/h3/a {} {"topRight":811,"topLeft":357,"bottomRight":894,"bottomLeft":518,"middle":611,"inTarget":false}
+0 1516281216623 433 120 click //*[@id='rso']/div[1]/div/h3/a {} {"topRight":811,"topLeft":357,"bottomRight":894,"bottomLeft":518,"middle":611,"inTarget":false}
+0 1516281216624 0 0 beforeunload / {} {}
+0 1516281216819 450 123 mousemove //*[@id='rso']/div[1]/div/h3/a {} {"topRight":794,"topLeft":340,"bottomRight":877,"bottomLeft":505,"middle":594,"inTarget":false}
+0 1516281216969 797 223 mouseover //*[@id='rhs_block']/div {} {"topRight":462,"topLeft":117,"bottomRight":524,"bottomLeft":273,"middle":233,"inTarget":false}
+0 1516281217025 0 0 unload / {} {}

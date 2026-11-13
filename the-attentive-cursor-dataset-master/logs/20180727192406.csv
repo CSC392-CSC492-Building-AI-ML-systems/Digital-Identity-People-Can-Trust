@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1532712408323 0 0 load / {} {}
+0 1532712409579 277 125 mouseover //*[@id='tvcap']/div[1]/div/div[1]/h3/a/span/font/font {} {"topRight":465,"topLeft":150,"bottomRight":604,"bottomLeft":414,"middle":242,"inTarget":true}
+0 1532712410687 276 119 mousemove //*[@id='tvcap']/div[1]/div/div[1]/h3/a/span/font/font {} {"topRight":466,"topLeft":149,"bottomRight":609,"bottomLeft":419,"middle":247,"inTarget":true}
+0 1532712411023 0 0 blur / {} {}
+0 1532712415019 0 0 focus / {} {}
+0 1532712415519 436 1 mouseover //*[@id='searchform']/div/div {} {"topRight":324,"topLeft":325,"bottomRight":595,"bottomLeft":596,"middle":308,"inTarget":false}
+0 1532712415673 274 560 mouseover //*[@id='rso']/div[1]/div/div/div/div/div/cite/b/font/font {} {"topRight":652,"topLeft":477,"bottomRight":471,"bottomLeft":154,"middle":299,"inTarget":false}
+0 1532712415841 152 645 mousemove //*[@id='rso']/div[1]/div {} {"topRight":799,"topLeft":540,"bottomRight":605,"bottomLeft":136,"middle":440,"inTarget":false}
+0 1532712416002 178 581 mousemove //*[@id='rso']/div[1]/div/div/div/div/span/em/font/font {} {"topRight":737,"topLeft":478,"bottomRight":568,"bottomLeft":86,"middle":375,"inTarget":false}
+0 1532712416287 197 557 mousemove //*[@id='rso']/div[1]/div/div/div/div/div/cite/font[1]/font {} {"topRight":707,"topLeft":456,"bottomRight":547,"bottomLeft":83,"middle":344,"inTarget":false}
+0 1532712416469 199 551 mousemove //*[@id='rso']/div[1]/div/div/h3/a/font/font {} {"topRight":702,"topLeft":451,"bottomRight":544,"bottomLeft":81,"middle":338,"inTarget":false}
+0 1532712416584 199 551 mousedown //*[@id='rso']/div[1]/div/div/h3/a/font/font {} {"topRight":702,"topLeft":451,"bottomRight":544,"bottomLeft":81,"middle":338,"inTarget":false}
+0 1532712416681 199 551 mouseup //*[@id='rso']/div[1]/div/div/h3/a/font/font {} {"topRight":702,"topLeft":451,"bottomRight":544,"bottomLeft":81,"middle":338,"inTarget":false}
+0 1532712416682 199 551 click //*[@id='rso']/div[1]/div/div/h3/a/font/font {} {"topRight":702,"topLeft":451,"bottomRight":544,"bottomLeft":81,"middle":338,"inTarget":false}
+0 1532712416683 0 0 beforeunload / {} {}
+0 1532712416980 0 0 unload / {} {}

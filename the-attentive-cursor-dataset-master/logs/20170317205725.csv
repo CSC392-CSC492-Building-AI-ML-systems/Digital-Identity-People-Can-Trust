@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1489780741947 0 0 load / {} {}
+0 1489780742239 850 207 mousemove //*[@id='plarhs0'] {} {"topRight":407,"topLeft":117,"bottomRight":633,"bottomLeft":500,"middle":259,"inTarget":true}
+0 1489780742392 787 146 mousemove //*[@id='rhscol'] {} {"topRight":459,"topLeft":40,"bottomRight":720,"bottomLeft":557,"middle":346,"inTarget":false}
+0 1489780743055 762 86 mousemove //*[@id='slim_appbar'] {} {"topRight":482,"topLeft":34,"bottomRight":783,"bottomLeft":618,"middle":408,"inTarget":false}
+0 1489780743222 749 96 mousemove //*[@id='slim_appbar'] {} {"topRight":495,"topLeft":42,"bottomRight":783,"bottomLeft":608,"middle":409,"inTarget":false}
+0 1489780743385 743 98 mousemove //*[@id='slim_appbar'] {} {"topRight":501,"topLeft":48,"bottomRight":786,"bottomLeft":607,"middle":411,"inTarget":false}
+0 1489780743833 741 98 mousemove //*[@id='slim_appbar'] {} {"topRight":503,"topLeft":50,"bottomRight":787,"bottomLeft":607,"middle":412,"inTarget":false}
+0 1489780744222 741 97 mousemove //*[@id='slim_appbar'] {} {"topRight":503,"topLeft":50,"bottomRight":788,"bottomLeft":608,"middle":413,"inTarget":false}
+0 1489780744466 741 96 mousemove //*[@id='slim_appbar'] {} {"topRight":503,"topLeft":50,"bottomRight":788,"bottomLeft":609,"middle":414,"inTarget":false}
+0 1489780744894 739 94 mousemove //*[@id='slim_appbar'] {} {"topRight":505,"topLeft":52,"bottomRight":791,"bottomLeft":611,"middle":417,"inTarget":false}
+0 1489780745060 739 92 mousemove //*[@id='slim_appbar'] {} {"topRight":505,"topLeft":53,"bottomRight":793,"bottomLeft":613,"middle":418,"inTarget":false}
+0 1489780745256 738 90 mousemove //*[@id='slim_appbar'] {} {"topRight":506,"topLeft":54,"bottomRight":795,"bottomLeft":615,"middle":420,"inTarget":false}
+0 1489780745415 738 87 mousemove //*[@id='slim_appbar'] {} {"topRight":506,"topLeft":55,"bottomRight":797,"bottomLeft":618,"middle":423,"inTarget":false}
+0 1489780747815 0 0 blur / {} {}
+0 1489780751586 0 0 beforeunload / {} {}
+0 1489780751710 0 0 unload / {} {}

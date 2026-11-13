@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1486773351355 0 0 load / {} {}
+0 1486773355148 0 0 focus / {} {}
+0 1486773355621 405 10 mouseover //*[@id='sfdiv'] {} {"topRight":350,"topLeft":293,"bottomRight":457,"bottomLeft":415,"middle":205,"inTarget":false}
+0 1486773355816 337 94 mousemove //*[@id='resultStats'] {} {"topRight":405,"topLeft":209,"bottomRight":463,"bottomLeft":307,"middle":154,"inTarget":false}
+0 1486773355967 294 231 mouseover //*[@id='tvcap']/div[1]/div/div[2]/div[1]/div[2]/div[1] {} {"topRight":465,"topLeft":208,"bottomRight":457,"bottomLeft":188,"middle":142,"inTarget":true}
+0 1486773356124 276 315 mouseover //*[@id='tvcap']/div[1] {} {"topRight":511,"topLeft":256,"bottomRight":466,"bottomLeft":148,"middle":189,"inTarget":false}
+0 1486773356280 257 366 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div[1]/cite/b[1] {} {"topRight":550,"topLeft":290,"bottomRight":487,"bottomLeft":137,"middle":235,"inTarget":false}
+0 1486773356430 245 365 mousemove //*[@id='rso']/div[1]/div[1]/div/div/div/div[1]/cite/b[1] {} {"topRight":560,"topLeft":284,"bottomRight":499,"bottomLeft":126,"middle":244,"inTarget":false}
+0 1486773356586 234 356 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":566,"topLeft":272,"bottomRight":509,"bottomLeft":112,"middle":247,"inTarget":false}
+0 1486773356902 231 350 mousemove //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":566,"topLeft":265,"bottomRight":512,"bottomLeft":108,"middle":246,"inTarget":false}
+0 1486773358553 231 350 mousedown //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":566,"topLeft":265,"bottomRight":512,"bottomLeft":108,"middle":246,"inTarget":false}
+0 1486773358711 231 350 mouseup //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":566,"topLeft":265,"bottomRight":512,"bottomLeft":108,"middle":246,"inTarget":false}
+0 1486773358712 231 350 click //*[@id='rso']/div[1]/div[1]/div/h3/a {} {"topRight":566,"topLeft":265,"bottomRight":512,"bottomLeft":108,"middle":246,"inTarget":false}
+0 1486773358712 0 0 beforeunload / {} {}
+0 1486773358993 0 0 unload / {} {}

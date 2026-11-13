@@ -1,0 +1,16 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538405887721 0 0 load / {} {}
+0 1538405889903 374 302 mouseover //*[@id='tads'] {} {"topRight":422,"topLeft":318,"bottomRight":370,"bottomLeft":246,"middle":118,"inTarget":false}
+0 1538405890053 360 72 mousemove //*[@id='resultStats']/nobr {} {"topRight":385,"topLeft":234,"bottomRight":449,"bottomLeft":328,"middle":151,"inTarget":false}
+0 1538405890219 368 10 mouseover //*[@id='sfdiv'] {} {"topRight":387,"topLeft":256,"bottomRight":477,"bottomLeft":380,"middle":204,"inTarget":false}
+0 1538405890794 0 0 blur / {} {}
+0 1538405905171 0 0 focus / {} {}
+0 1538405905458 569 0 mouseover //*[@id='searchform']/div/div {} {"topRight":202,"topLeft":452,"bottomRight":351,"bottomLeft":536,"middle":242,"inTarget":false}
+0 1538405905624 528 120 mousemove //*[@id='vs0p1c0'] {} {"topRight":217,"topLeft":400,"bottomRight":284,"bottomLeft":440,"middle":123,"inTarget":true}
+0 1538405905787 464 159 mousemove //*[@id='tads']/ol/li/div[2] {} {"topRight":286,"topLeft":341,"bottomRight":315,"bottomLeft":366,"middle":51,"inTarget":true}
+0 1538405905954 437 164 mousemove //*[@id='tads']/ol/li/div[2] {} {"topRight":314,"topLeft":316,"bottomRight":337,"bottomLeft":339,"middle":38,"inTarget":true}
+0 1538405906104 428 169 mousemove //*[@id='tads']/ol/li/div[3] {} {"topRight":323,"topLeft":308,"bottomRight":344,"bottomLeft":329,"middle":34,"inTarget":true}
+0 1538405906257 375 292 mouseover //*[@id='tads']/ol/li {} {"topRight":416,"topLeft":313,"bottomRight":369,"bottomLeft":247,"middle":109,"inTarget":true}
+0 1538405906750 369 330 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":440,"topLeft":333,"bottomRight":376,"bottomLeft":242,"middle":144,"inTarget":false}
+0 1538405907434 369 329 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":439,"topLeft":332,"bottomRight":376,"bottomLeft":242,"middle":144,"inTarget":false}
+0 1538405907716 369 328 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":439,"topLeft":332,"bottomRight":376,"bottomLeft":242,"middle":143,"inTarget":false}

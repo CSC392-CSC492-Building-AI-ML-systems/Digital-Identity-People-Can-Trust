@@ -1,0 +1,12 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1535315473275 0 0 load / {} {}
+0 1535315473430 480 112 mouseover //*[@id='tvcap']/div[1]/div/div[1] {} {"topRight":262,"topLeft":352,"bottomRight":333,"bottomLeft":407,"middle":109,"inTarget":true}
+0 1535315473580 482 107 mousemove //*[@id='tvcap']/div[1] {} {"topRight":260,"topLeft":354,"bottomRight":334,"bottomLeft":412,"middle":115,"inTarget":false}
+0 1535315473730 504 82 mousemove //*[@id='slim_appbar'] {} {"topRight":239,"topLeft":377,"bottomRight":334,"bottomLeft":443,"middle":147,"inTarget":false}
+0 1535315473882 533 46 mouseover //*[@id='sfdiv'] {} {"topRight":217,"topLeft":409,"bottomRight":342,"bottomLeft":487,"middle":192,"inTarget":false}
+0 1535315474045 562 13 mouseover //*[@id='sfdiv'] {} {"topRight":203,"topLeft":444,"bottomRight":353,"bottomLeft":530,"middle":236,"inTarget":false}
+0 1535315474197 575 3 mousemove //*[@id='searchform']/div/div {} {"topRight":196,"topLeft":459,"bottomRight":356,"bottomLeft":546,"middle":251,"inTarget":false}
+0 1535315475554 0 0 blur / {} {}
+0 1535315551678 0 0 focus / {} {}
+0 1535315552697 0 0 beforeunload / {} {}
+0 1535315552699 0 0 unload / {} {}

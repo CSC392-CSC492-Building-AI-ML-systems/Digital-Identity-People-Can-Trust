@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1538394857894 0 0 load / {} {}
+0 1538394858860 458 232 mouseover /html {} {"topRight":513,"topLeft":513,"bottomRight":513,"bottomLeft":513,"middle":513,"inTarget":false}
+0 1538394859164 460 231 mousemove /html {} {"topRight":515,"topLeft":515,"bottomRight":515,"bottomLeft":515,"middle":515,"inTarget":false}
+0 1538394859329 1052 149 mousemove /html {} {"topRight":1062,"topLeft":1062,"bottomRight":1062,"bottomLeft":1062,"middle":1062,"inTarget":false}
+0 1538394859508 990 156 mousemove /html {} {"topRight":1002,"topLeft":1002,"bottomRight":1002,"bottomLeft":1002,"middle":1002,"inTarget":false}
+0 1538394859661 1275 3 mouseover //*[@id='adblocker'] {} {"topRight":1275,"topLeft":1275,"bottomRight":1275,"bottomLeft":1275,"middle":1275,"inTarget":false}
+0 1538394862329 0 0 blur / {} {}
+0 1538394864027 1004 99 mouseover //*[@id='adblocker'] {} {"topRight":1009,"topLeft":1009,"bottomRight":1009,"bottomLeft":1009,"middle":1009,"inTarget":false}
+0 1538394864271 904 101 mousemove //*[@id='adblocker'] {} {"topRight":910,"topLeft":910,"bottomRight":910,"bottomLeft":910,"middle":910,"inTarget":false}
+0 1538394864422 540 103 mousemove //*[@id='adblocker'] {} {"topRight":550,"topLeft":550,"bottomRight":550,"bottomLeft":550,"middle":550,"inTarget":false}
+0 1538394864573 209 35 mousemove //*[@id='adblocker']/h1 {} {"topRight":212,"topLeft":212,"bottomRight":212,"bottomLeft":212,"middle":212,"inTarget":false}
+0 1538394865129 0 0 focus / {} {}
+0 1538394865177 0 0 beforeunload / {} {}
+0 1538394865353 180 10 mouseover //*[@id='adblocker']/h1 {} {"topRight":180,"topLeft":180,"bottomRight":180,"bottomLeft":180,"middle":180,"inTarget":false}
+0 1538394865505 694 187 mousemove /html {} {"topRight":719,"topLeft":719,"bottomRight":719,"bottomLeft":719,"middle":719,"inTarget":false}
+0 1538394865576 0 0 unload / {} {}

@@ -1,0 +1,12 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1536296695212 0 0 load / {} {}
+0 1536296696647 0 0 scroll / {} {}
+0 1536296696805 0 0 scroll / {} {}
+0 1536296697814 427 636 mouseover //*[@id='rso']/div[1]/div/table/tbody/tr[1]/td[1]/div/div {} {"topRight":617,"topLeft":609,"bottomRight":339,"bottomLeft":324,"middle":328,"inTarget":false}
+0 1536296697964 455 541 mouseover //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":521,"topLeft":544,"bottomRight":289,"bottomLeft":328,"middle":233,"inTarget":false}
+0 1536296698313 463 526 mousemove //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":504,"topLeft":537,"bottomRight":279,"bottomLeft":335,"middle":219,"inTarget":false}
+0 1536296698342 463 526 mousedown //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":504,"topLeft":537,"bottomRight":279,"bottomLeft":335,"middle":219,"inTarget":false}
+0 1536296698485 463 526 mouseup //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":504,"topLeft":537,"bottomRight":279,"bottomLeft":335,"middle":219,"inTarget":false}
+0 1536296698486 463 526 click //*[@id='rso']/div[1]/div/div/h3/a {} {"topRight":504,"topLeft":537,"bottomRight":279,"bottomLeft":335,"middle":219,"inTarget":false}
+0 1536296698487 0 0 beforeunload / {} {}
+0 1536296698643 0 0 unload / {} {}

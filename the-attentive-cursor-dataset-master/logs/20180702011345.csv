@@ -1,0 +1,17 @@
+cursor timestamp xpos ypos event xpath attrs extras
+0 1530486965748 0 0 load / {} {}
+0 1530486980911 0 0 focus / {} {}
+0 1530486981444 572 0 mouseover //*[@id='searchform']/div/div {} {"topRight":199,"topLeft":455,"bottomRight":278,"bottomLeft":495,"middle":210,"inTarget":false}
+0 1530486981609 462 102 mouseover //*[@id='tads']/ol/li {} {"topRight":282,"topLeft":334,"bottomRight":305,"bottomLeft":354,"middle":63,"inTarget":true}
+0 1530486981759 373 122 mousemove //*[@id='tads']/ol/li/h3 {} {"topRight":372,"topLeft":246,"bottomRight":383,"bottomLeft":264,"middle":73,"inTarget":true}
+0 1530486981911 353 126 mousemove //*[@id='tads']/ol/li/h3 {} {"topRight":392,"topLeft":226,"bottomRight":402,"bottomLeft":243,"middle":90,"inTarget":true}
+0 1530486982061 384 33 mouseover //*[@id='lst-ib'] {} {"topRight":366,"topLeft":265,"bottomRight":405,"bottomLeft":316,"middle":137,"inTarget":false}
+0 1530486983158 417 5 mouseover //*[@id='searchform']/div/div {} {"topRight":341,"topLeft":304,"bottomRight":391,"bottomLeft":360,"middle":156,"inTarget":false}
+0 1530486983310 353 70 mousemove //*[@id='resultStats'] {} {"topRight":392,"topLeft":227,"bottomRight":418,"bottomLeft":270,"middle":122,"inTarget":false}
+0 1530486983464 333 102 mouseover //*[@id='tads']/ol/li {} {"topRight":411,"topLeft":205,"bottomRight":427,"bottomLeft":236,"middle":118,"inTarget":true}
+0 1530486983711 314 122 mousemove //*[@id='vs0p1c0'] {} {"topRight":431,"topLeft":187,"bottomRight":441,"bottomLeft":210,"middle":128,"inTarget":true}
+0 1530486984644 314 122 mousedown //*[@id='vs0p1c0'] {} {"topRight":431,"topLeft":187,"bottomRight":441,"bottomLeft":210,"middle":128,"inTarget":true}
+0 1530486984817 314 122 mouseup //*[@id='vs0p1c0'] {} {"topRight":431,"topLeft":187,"bottomRight":441,"bottomLeft":210,"middle":128,"inTarget":true}
+0 1530486984821 314 122 click //*[@id='vs0p1c0'] {} {"topRight":431,"topLeft":187,"bottomRight":441,"bottomLeft":210,"middle":128,"inTarget":true}
+0 1530486984821 0 0 beforeunload / {} {}
+0 1530486985527 316 122 mousemove //*[@id='vs0p1c0'] {} {"topRight":429,"topLeft":189,"bottomRight":439,"bottomLeft":212,"middle":126,"inTarget":true}
