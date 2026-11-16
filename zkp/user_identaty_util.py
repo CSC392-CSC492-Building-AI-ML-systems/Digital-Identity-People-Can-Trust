@@ -4,11 +4,31 @@ Utility module for capturing and extracting user identity data from physical doc
 Requires: pip install opencv-python Pillow zxing-cpp
 """
 
-import cv2
-import tkinter as tk
-from PIL import Image, ImageTk
-import zxingcpp
-import config
+try:
+    import cv2
+except ImportError:
+    cv2 = None
+
+try:
+    import zxingcpp
+except ImportError:
+    zxingcpp = None
+
+try:
+    from PIL import Image, ImageOps, UnidentifiedImageError
+except ImportError:
+    Image = None
+    ImageOps = None
+    UnidentifiedImageError = OSError
+
+try:
+    import tkinter as tk
+    from PIL import ImageTk
+except ImportError:
+    tk = None
+    ImageTk = None
+from . import config
+from io import BytesIO
 import os
 import re
 
@@ -26,10 +46,6 @@ def _parse_aamva_barcode(barcode_text):
     Parses the AAMVA-standard PDF417 barcode text to extract name and DOB using Regex.
     This bypasses all line-ending and terminal formatting bugs.
     """
-    print("\n[DEBUG] Raw Barcode Payload:")
-    print(repr(barcode_text))
-    print("-" * 30)
-
     data = {
         "first_name": "Unknown",
         "last_name": "Unknown",
@@ -55,11 +71,93 @@ def _parse_aamva_barcode(barcode_text):
                 
     return data
 
+def extract_identity_from_image(image_bytes):
+    """Decode a machine-readable identity-card barcode from an uploaded image.
+
+    The bytes remain in memory only; callers must not persist the original
+    document image.  The currently supported barcode format is AAMVA PDF417.
+    """
+    if not Image or not zxingcpp:
+        raise RuntimeError('Document barcode decoder dependencies are missing.')
+    try:
+        with Image.open(BytesIO(image_bytes)) as uploaded:
+            if uploaded.width * uploaded.height > 25_000_000:
+                raise ValueError('Image dimensions are too large.')
+            image = ImageOps.exif_transpose(uploaded).convert('RGB')
+    except (UnidentifiedImageError, OSError) as exc:
+        raise ValueError('The uploaded file is not a readable image.') from exc
+
+    # Look specifically for PDF417 before trying every barcode format. A phone
+    # photo can contain both codes; a decoded 1-D strip says nothing about
+    # whether the larger PDF417 in the same photo was readable.
+    decoded_pdf417 = False
+    detected_pdf417 = False
+
+    def read_pdf417(candidate):
+        nonlocal decoded_pdf417, detected_pdf417
+        results = zxingcpp.read_barcodes(
+            candidate, formats=zxingcpp.BarcodeFormat.PDF417,
+            return_errors=True,
+        )
+        for result in results:
+            detected_pdf417 = True
+            if not result.valid:
+                continue
+            decoded_pdf417 = True
+            # Do not infer a birth date from an unfamiliar PDF417 payload.
+            if re.search(r'ANSI\s*\d{6,}', result.text):
+                identity = _parse_aamva_barcode(result.text)
+                if identity['birth_date'] != 'Unknown':
+                    return {'status': 'supported', 'identity': identity}
+        return None
+
+    found = read_pdf417(image)
+    if found:
+        return found
+
+    # The dense code often occupies a small part of a full-card photo. A
+    # contrast pass and overlapping crops give the detector more pixels to
+    # work with without asking users to crop a private document manually.
+    working = image.copy()
+    working.thumbnail((3200, 3200), Image.Resampling.LANCZOS)
+    enhanced = ImageOps.autocontrast(working.convert('L'), cutoff=1)
+    width, height = enhanced.size
+    boxes = [
+        (0, 0, width * 3 // 4, height * 3 // 4),
+        (width // 4, 0, width, height * 3 // 4),
+        (0, height // 4, width * 3 // 4, height),
+        (width // 4, height // 4, width, height),
+    ]
+    for candidate in [enhanced, *(enhanced.crop(box) for box in boxes)]:
+        found = read_pdf417(candidate)
+        if found:
+            return found
+
+    # ZXing handles quarter-turns, but a tilted phone photo can still defeat
+    # PDF417 detection. Straighten plausible camera angles as a final retry.
+    for angle in (-12, 12, -20, 20, -28, 28):
+        straightened = enhanced.rotate(
+            angle, Image.Resampling.BICUBIC, expand=True, fillcolor=255
+        )
+        found = read_pdf417(straightened)
+        if found:
+            return found
+
+    if decoded_pdf417:
+        return {'status': 'unsupported'}
+    if detected_pdf417:
+        return {'status': 'not_found'}
+    if zxingcpp.read_barcodes(image):
+        return {'status': 'wrong_barcode'}
+    return {'status': 'not_found'}
+
 def _get_from_drivers_license():
     """
     Opens a centered GUI with a live camera feed to capture and decode the 
     PDF417 barcode on the back of a Canadian Driver's License.
     """
+    if not all((cv2, tk, Image, ImageTk, zxingcpp)):
+        raise RuntimeError('The desktop document scanner dependencies are not installed.')
     root = tk.Tk()
     root.title("Identity Verification - Driver's License")
     
