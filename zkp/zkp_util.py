@@ -12,7 +12,7 @@ from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives import serialization
 from cryptography.exceptions import InvalidSignature
-import config
+from . import config
 
 def generate_keypair():
     """

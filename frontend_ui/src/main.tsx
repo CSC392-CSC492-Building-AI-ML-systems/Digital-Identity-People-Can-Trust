@@ -1,12 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Link, Routes, Route, useNavigate } from 'react-router';
+import { BrowserRouter, Link, Navigate, Routes, Route, useNavigate } from 'react-router';
 import CircleHelp from 'lucide-react/dist/esm/icons/circle-help.mjs';
 import { Button } from './components/ui/button';
 import { Input } from './components/ui/input';
 import { Label } from './components/ui/label';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './components/ui/tooltip';
-import { AgeVerificationFailureScreen, AgeVerificationScreen } from './age-verification';
+import { AgeVerificationFailureScreen, AgeVerificationScreen, PhoneDocumentScanner } from './age-verification';
 import { MinesGameScreen } from './mines-game';
 import './styles.css';
 
@@ -95,8 +95,9 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/register" element={<AuthScreen mode="register" />} />
           <Route path="/login" element={<AuthScreen mode="login" />} />
           <Route path="/verify-age" element={<AgeVerificationScreen />} />
-          <Route path="/verify-age/success" element={<AgeVerificationScreen verified />} />
+          <Route path="/verify-age/success" element={<Navigate to="/verify-age" replace />} />
           <Route path="/verify-age/failure" element={<AgeVerificationFailureScreen />} />
+          <Route path="/verify-age/scan" element={<PhoneDocumentScanner />} />
           <Route path="/mines" element={<MinesGameScreen />} />
         </Routes>
       </TooltipProvider>
