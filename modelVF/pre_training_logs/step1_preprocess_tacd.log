@@ -1,0 +1,9 @@
+[2026-11-19T21:44:29.971129+00:00] STEP 1 SUMMARY: TACD Log & Demographic Preprocessing
+[2026-11-19T21:44:29.971129+00:00] TACD directory: /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/the-attentive-cursor-dataset-master
+[2026-11-19T21:44:29.971129+00:00] Total rows in participants.tsv: 2909
+[2026-11-19T21:44:29.971129+00:00] Rows with valid age bin (excluding 'na'): 2889
+[2026-11-19T21:44:29.971129+00:00] Missing CSV log files skipped: 0
+[2026-11-19T21:44:29.971129+00:00] Sessions with fewer than 2 windows skipped: 1986
+[2026-11-19T21:44:29.971129+00:00] Usable adult sessions retained: 903 (seniors bin >= 8: 44)
+[2026-11-19T21:44:29.971129+00:00] Total valid mouse events extracted: 34628
+[2026-11-19T21:44:29.971129+00:00] Total (16, 5) kinematic windows generated: 5337

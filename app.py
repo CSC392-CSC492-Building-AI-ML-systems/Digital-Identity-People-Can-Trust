@@ -1,66 +1,117 @@
+"""Flask application server for identity verification, ZKP issuance, and telemetry monitoring.
+
+Coordinates document verification sessions, session lifecycle endpoints, HMAC-SHA256
+telemetry signature checks, sliding-window kinematic inference, and federated
+learning synchronization.
+"""
+
+from pathlib import Path
+import sys
 from flask import Flask, request, jsonify
 from collections import deque
 import hmac
 import hashlib
 import secrets
-import math
 import time
+
+_PROJECT_ROOT = str(Path(__file__).resolve().parent)
+_MODEL_VF_DIR = str(Path(__file__).resolve().parent / "modelVF")
+_INFERENCE_DIR = str(Path(__file__).resolve().parent / "modelVF" / "inference")
+_PRE_TRAIN_DIR = str(Path(__file__).resolve().parent / "modelVF" / "pre_training")
+for _p in (_PROJECT_ROOT, _MODEL_VF_DIR, _INFERENCE_DIR, _PRE_TRAIN_DIR):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
 from zkp import user_identaty_util, zkp_util
+import configs as cfg
+from features import compute_kinematic_step
+from inference_engine import (
+    load_model,
+    evaluate_session_window,
+    sync_from_fl_server,
+    push_dp_delta_to_fl_server,
+)
 
 app = Flask(__name__)
 
-# --- Configuration & Thresholds ---
-WINDOW_SIZE = 100
-MAX_VELOCITY_PX_MS = 50.0  # Heuristic limit for bot detection
+ML_MODEL, ML_MEAN, ML_STD = load_model()
 
 active_sessions = {}
 verification_sessions = {}
-VERIFICATION_TTL_SECONDS = 10 * 60
-MAX_DOCUMENT_BYTES = 10 * 1024 * 1024
+
 
 def _verification_session(session_id):
+    """Retrieve an active verification session if it has not expired.
+
+    :param session_id: Verification session identifier.
+    :type session_id: str
+    :return: Verification session dictionary or ``None``.
+    :rtype: dict or None
+    """
     session = verification_sessions.get(session_id)
     if not session or session['expires_at'] < time.time():
         verification_sessions.pop(session_id, None)
         return None
     return session
 
+
 @app.route('/api/verification/sessions', methods=['POST'])
 def create_verification_session():
+    """Create a new document verification session with a finite TTL.
+
+    :return: JSON containing ``session_id`` and ``expires_in`` with HTTP 201.
+    :rtype: tuple[flask.Response, int]
+    """
     session_id = secrets.token_urlsafe(24)
     verification_sessions[session_id] = {
         'status': 'waiting_for_photo',
-        'expires_at': time.time() + VERIFICATION_TTL_SECONDS,
+        'expires_at': time.time() + cfg.VERIFICATION_TTL_SECONDS,
         'proof': None,
         'error': None,
     }
-    return jsonify({'session_id': session_id, 'expires_in': VERIFICATION_TTL_SECONDS}), 201
+    return jsonify({'session_id': session_id, 'expires_in': cfg.VERIFICATION_TTL_SECONDS}), 201
+
 
 @app.route('/api/verification/sessions/<session_id>', methods=['GET'])
 def get_verification_session(session_id):
+    """Return current status, proof, and error state for a verification session.
+
+    :param session_id: Verification session identifier.
+    :type session_id: str
+    :return: JSON session state or 404 error.
+    :rtype: tuple[flask.Response, int]
+    """
     session = _verification_session(session_id)
     if not session:
         return jsonify({'error': 'Verification session expired or was not found.'}), 404
     return jsonify({'status': session['status'], 'proof': session['proof'], 'error': session['error']})
 
+
 @app.route('/api/verification/sessions/<session_id>/document', methods=['POST'])
 def upload_verification_document(session_id):
+    """Validate an uploaded ID image, generate a ZKP for legal adults, and wipe image bytes.
+
+    :param session_id: Verification session identifier.
+    :type session_id: str
+    :return: JSON verification result and HTTP status code.
+    :rtype: tuple[flask.Response, int]
+    """
     session = _verification_session(session_id)
     if not session:
         return jsonify({'error': 'Verification session expired or was not found.'}), 404
-    if session['status'] in {'processing', 'verified', 'underage'}:
+    if session['status'] in cfg.FINISHED_VERIFICATION_STATUSES:
         return jsonify({'error': 'This verification session is already processing or finished.'}), 409
 
     document = request.files.get('document')
     if not document or not document.filename:
         session.update(status='scan_failed', error='Take or choose a photo of the back of your driver’s licence.')
         return jsonify({'status': session['status'], 'error': session['error']}), 400
-    if document.mimetype not in {'image/jpeg', 'image/png', 'image/webp'}:
+    if document.mimetype not in cfg.ALLOWED_DOC_MIMETYPES:
         session.update(status='scan_failed', error='Use a JPEG, PNG, or WebP image.')
         return jsonify({'status': session['status'], 'error': session['error']}), 400
 
-    image_bytes = document.read(MAX_DOCUMENT_BYTES + 1)
-    if len(image_bytes) > MAX_DOCUMENT_BYTES:
+    image_bytes = document.read(cfg.MAX_DOCUMENT_BYTES + 1)
+    if len(image_bytes) > cfg.MAX_DOCUMENT_BYTES:
         session.update(status='scan_failed', error='The image must be 10 MB or smaller.')
         return jsonify({'status': session['status'], 'error': session['error']}), 413
 
@@ -78,7 +129,7 @@ def upload_verification_document(session_id):
         session.update(status='scan_failed', error='The server could not process this photo. Please try again.')
         return jsonify({'status': session['status'], 'error': session['error']}), 500
     finally:
-        # Do not retain a copy of the image after this request.
+        # Discard raw document bytes immediately after extraction
         image_bytes = b''
 
     if scan['status'] == 'not_found':
@@ -101,13 +152,19 @@ def upload_verification_document(session_id):
     session.update(status='verified', proof=proof, error=None)
     return jsonify({'status': 'verified', 'proof': proof})
 
+
 @app.route('/api/session/start', methods=['POST'])
 def start_session():
-    data = request.json or {}
-    
+    """Verify identity, sync global model weights from FL server, and open a session.
+
+    :return: JSON session credentials, ZKP proof, and active FL round.
+    :rtype: tuple[flask.Response, int]
+    """
+    global ML_MODEL, ML_MEAN, ML_STD
+    _ = request.json or {}
+
     try:
-        # Currently only supports "drivers_licance"[cite: 3]
-        identity_data = user_identaty_util.get_identaty("drivers_licance")
+        identity_data = user_identaty_util.get_identaty(cfg.IDENTITY_DOC_TYPE)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -118,122 +175,134 @@ def start_session():
     hmac_secret = secrets.token_hex(16)
     dob = identity_data.get('birth_date')
 
-    # Generate ephemeral keypair and secure nonce statelessly[cite: 4]
-    private_pem, public_pem = zkp_util.generate_keypair()
+    private_pem, _ = zkp_util.generate_keypair()
     nonce = zkp_util.generate_secure_nonce()
-    
-    # Automatically returns None if the user's age is below LEGAL_AGE[cite: 4]
     zkp_proof = zkp_util.create_zkp(user_id, dob, nonce, private_pem)
 
     if zkp_proof is None:
         return jsonify({"message": "Please stop session. User is a minor."}), 403
 
-    # Initialize secure tracking session
+    ML_MODEL, ML_MEAN, ML_STD, fl_round = sync_from_fl_server(ML_MODEL, ML_MEAN, ML_STD)
+
     active_sessions[user_id] = {
         "status": "verified",
         "hmac_secret": hmac_secret,
-        "feature_window": deque(maxlen=WINDOW_SIZE),
-        "last_x": None, 
-        "last_y": None, 
+        "feature_window": deque(maxlen=cfg.WINDOW_SIZE),
+        "baseline_embedding": None,
+        "baseline_window_norm": None,
+        "dp_weight_delta": None,
+        "dp_window_count": 0,
+        "alert_strikes": 0,
+        "fl_round": fl_round,
+        "last_x": None,
+        "last_y": None,
         "last_ts": None,
-        "last_v": 0.0, 
-        "last_a": 0.0
+        "last_v": 0.0,
+        "last_a": 0.0,
     }
 
     return jsonify({
         "message": "Session started successfully.",
         "user_id": user_id,
         "hmac_secret": hmac_secret,
-        "zkp_proof": zkp_proof
+        "zkp_proof": zkp_proof,
+        "fl_round": fl_round,
     }), 200
 
 
 @app.route('/api/telemetry/submit', methods=['POST'])
 def submit_telemetry():
+    """Validate HMAC signature, compute kinematics, run model inference, and slide window.
+
+    :return: JSON pass/stop decision and HTTP status code.
+    :rtype: tuple[flask.Response, int]
+    """
     data = request.json or {}
     user_id = data.get('user_id')
     x = data.get('x')
     y = data.get('y')
     timestamp = data.get('timestamp')
     signature = data.get('signature')
+    width = data.get('width')
+    height = data.get('height')
 
     if user_id not in active_sessions:
         return jsonify({"message": "stop", "reason": "Invalid session"}), 401
-    
+
     session = active_sessions[user_id]
-    
-    # 1. Cryptographic Validation
+
     payload_str = f"x:{x}|y:{y}|ts:{timestamp}"
     expected_sig = hmac.new(
-        session["hmac_secret"].encode('utf-8'), 
-        payload_str.encode('utf-8'), 
+        session["hmac_secret"].encode('utf-8'),
+        payload_str.encode('utf-8'),
         hashlib.sha256
     ).hexdigest()
-    
+
     if not hmac.compare_digest(expected_sig, signature):
         return jsonify({"message": "stop", "reason": "Signature mismatch"}), 403
 
-    # 2. Extract Mathematical Derivatives (Inline processing)
-    last_ts = session["last_ts"]
-    last_x = session["last_x"]
-    last_y = session["last_y"]
-    
-    if last_ts is not None:
-        delta_t = timestamp - last_ts
-        if delta_t <= 0:
-            return jsonify({"message": "stop", "reason": "Replay attack or negative time delta."}), 403
-            
-        delta_x = x - last_x
-        delta_y = y - last_y
-        
-        velocity = math.sqrt(delta_x**2 + delta_y**2) / delta_t
-        acceleration = (velocity - session["last_v"]) / delta_t
-        jerk = (acceleration - session["last_a"]) / delta_t
-        angle = math.atan2(delta_y, delta_x)
-        
-        if velocity > MAX_VELOCITY_PX_MS:
-            return jsonify({"message": "stop", "reason": "Superhuman velocity detected."}), 403
-            
-        feature_vector = (velocity, acceleration, jerk, angle, delta_t)
-        session["feature_window"].append(feature_vector)
-        
-        # Update rolling state
-        session.update({
-            "last_x": x, "last_y": y, "last_ts": timestamp,
-            "last_v": velocity, "last_a": acceleration
-        })
-    else:
-        # First data point in session
-        session.update({"last_x": x, "last_y": y, "last_ts": timestamp})
+    feat_vec, new_state, status = compute_kinematic_step(
+        x, y, timestamp,
+        session["last_x"], session["last_y"], session["last_ts"],
+        session["last_v"], session["last_a"],
+        width=width, height=height,
+    )
 
-    # 3. Ephemeral Batch Execution (Inline Model Hook)
-    if len(session["feature_window"]) == WINDOW_SIZE:
-        # Placeholder for SGDClassifier inference or FedAvg weight updates
-        # e.g., prediction = sgd_model.predict(list(session["feature_window"]))
-        model_result = "pass" 
-        
-        # Immediately overwrite the data to maintain data minimization
-        session["feature_window"].clear()
-        
-        if model_result != "pass":
-            return jsonify({"message": "stop", "reason": "Model rejected behavior"}), 403
+    if status == "non_positive_dt":
+        return jsonify({"message": "stop", "reason": "Replay attack or negative time delta."}), 403
+    if status == "superhuman_velocity":
+        return jsonify({"message": "stop", "reason": "Superhuman velocity detected."}), 403
+
+    session.update(new_state)
+    if status == "ok":
+        session["feature_window"].append(feat_vec)
+
+    if len(session["feature_window"]) == cfg.WINDOW_SIZE:
+        eval_res = evaluate_session_window(ML_MODEL, ML_MEAN, ML_STD, session)
+
+        # Advance by STRIDE so consecutive evaluations overlap without a full-window blind spot
+        for _ in range(cfg.STRIDE):
+            if session["feature_window"]:
+                session["feature_window"].popleft()
+
+        if eval_res["action"] != "pass":
+            return jsonify({
+                "message": "stop",
+                "reason": eval_res["reason"],
+                "prob_minor": round(eval_res["prob_minor"], 4),
+                "prob_handoff": round(eval_res["prob_handoff"], 4),
+            }), 403
+
+        if session.get("dp_window_count", 0) >= cfg.DP_FLUSH_WINDOW_INTERVAL:
+            push_dp_delta_to_fl_server(session)
 
     return jsonify({"message": "pass"}), 200
 
 
 @app.route('/api/session/end', methods=['POST'])
 def end_session():
+    """Flush remaining DP weight deltas to the FL server and wipe session memory.
+
+    :return: JSON termination confirmation and HTTP status code.
+    :rtype: tuple[flask.Response, int]
+    """
     data = request.json or {}
     user_id = data.get('user_id')
 
     if user_id in active_sessions:
-        # Securely wipe the arrays and destroy the state
-        active_sessions[user_id]["feature_window"].clear()
-        active_sessions[user_id].clear()
+        session = active_sessions[user_id]
+        fl_status = push_dp_delta_to_fl_server(session)
+
+        session["feature_window"].clear()
+        session.clear()
         del active_sessions[user_id]
-        return jsonify({"message": "Session successfully wiped and terminated."}), 200
-    
+        return jsonify({
+            "message": "Session successfully wiped and terminated.",
+            "federated_update": fl_status,
+        }), 200
+
     return jsonify({"error": "Session not found."}), 404
 
+
 if __name__ == '__main__':
-    app.run(port=5432, debug=True)
+    app.run(port=cfg.APP_SERVER_PORT, debug=True)

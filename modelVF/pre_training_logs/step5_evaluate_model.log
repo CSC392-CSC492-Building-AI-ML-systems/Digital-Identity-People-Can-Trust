@@ -1,0 +1,7 @@
+[2026-11-19T21:45:42.699627+00:00] STEP 5 SUMMARY: Checkpoint Evaluation
+[2026-11-19T21:45:42.699627+00:00] Checkpoint: modelVF/network_model.pt | Split: test | Threshold: 0.65
+[2026-11-19T21:45:42.699627+00:00]   normal_adult              :   24/ 694 (  3.5%)
+[2026-11-19T21:45:42.699627+00:00]   senior_adult              :    8/ 111 (  7.2%)
+[2026-11-19T21:45:42.699627+00:00]   child_starts              :  671/ 702 ( 95.6%)
+[2026-11-19T21:45:42.699627+00:00]   adult_to_minor_handoff    :  677/ 702 ( 96.4%)
+[2026-11-19T21:45:42.699627+00:00]   adult_to_adult_handoff    :    9/ 241 (  3.7%)

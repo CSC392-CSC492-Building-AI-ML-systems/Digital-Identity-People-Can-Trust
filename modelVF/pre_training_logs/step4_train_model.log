@@ -1,0 +1,30 @@
+[2026-11-19T21:44:30.389729+00:00] STEP 4 START: Training Dual-Head 1D-CNN
+[2026-11-19T21:44:30.389729+00:00] Epochs: 25 | Batch size: 64 | LR: 0.001 | Weight decay: 0.001 | Seed: 0
+[2026-11-19T21:44:33.169020+00:00] Epoch 01/25 | Train Loss: 1.2413 | Val Loss: 1.0355 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:35.453217+00:00] Epoch 02/25 | Train Loss: 0.9786 | Val Loss: 0.8231 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:37.759775+00:00] Epoch 03/25 | Train Loss: 0.7731 | Val Loss: 0.6702 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:40.080462+00:00] Epoch 04/25 | Train Loss: 0.6110 | Val Loss: 0.5163 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:42.403088+00:00] Epoch 05/25 | Train Loss: 0.4936 | Val Loss: 0.4554 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:44.683896+00:00] Epoch 06/25 | Train Loss: 0.4133 | Val Loss: 0.4307 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:47.004452+00:00] Epoch 07/25 | Train Loss: 0.3890 | Val Loss: 0.4115 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:49.295709+00:00] Epoch 08/25 | Train Loss: 0.3573 | Val Loss: 0.4179
+[2026-11-19T21:44:51.575610+00:00] Epoch 09/25 | Train Loss: 0.3345 | Val Loss: 0.3932 -> Saved best checkpoint to /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt
+[2026-11-19T21:44:53.872034+00:00] Epoch 10/25 | Train Loss: 0.3253 | Val Loss: 0.4193
+[2026-11-19T21:44:56.155450+00:00] Epoch 11/25 | Train Loss: 0.3009 | Val Loss: 0.3962
+[2026-11-19T21:44:58.463233+00:00] Epoch 12/25 | Train Loss: 0.2976 | Val Loss: 0.4105
+[2026-11-19T21:45:00.747805+00:00] Epoch 13/25 | Train Loss: 0.2868 | Val Loss: 0.4134
+[2026-11-19T21:45:03.037289+00:00] Epoch 14/25 | Train Loss: 0.2793 | Val Loss: 0.4148
+[2026-11-19T21:45:05.320556+00:00] Epoch 15/25 | Train Loss: 0.2789 | Val Loss: 0.4037
+[2026-11-19T21:45:07.615740+00:00] Epoch 16/25 | Train Loss: 0.2690 | Val Loss: 0.3978
+[2026-11-19T21:45:09.897965+00:00] Epoch 17/25 | Train Loss: 0.2643 | Val Loss: 0.4074
+[2026-11-19T21:45:12.215591+00:00] Epoch 18/25 | Train Loss: 0.2609 | Val Loss: 0.4094
+[2026-11-19T21:45:14.505045+00:00] Epoch 19/25 | Train Loss: 0.2539 | Val Loss: 0.4020
+[2026-11-19T21:45:16.787648+00:00] Epoch 20/25 | Train Loss: 0.2505 | Val Loss: 0.4042
+[2026-11-19T21:45:19.088206+00:00] Epoch 21/25 | Train Loss: 0.2480 | Val Loss: 0.4046
+[2026-11-19T21:45:21.368790+00:00] Epoch 22/25 | Train Loss: 0.2497 | Val Loss: 0.4075
+[2026-11-19T21:45:23.705860+00:00] Epoch 23/25 | Train Loss: 0.2451 | Val Loss: 0.4074
+[2026-11-19T21:45:25.985236+00:00] Epoch 24/25 | Train Loss: 0.2410 | Val Loss: 0.4076
+[2026-11-19T21:45:28.280481+00:00] Epoch 25/25 | Train Loss: 0.2444 | Val Loss: 0.4074
+[2026-11-19T21:45:28.280726+00:00] STEP 4 COMPLETE: Training Finished
+[2026-11-19T21:45:28.280726+00:00] Best validation loss: 0.3932 at epoch 9
+[2026-11-19T21:45:28.280726+00:00] Checkpoint saved at: /Users/serjgalstyan/Desktop/Year 3 docs/CSC398/Digital-Identity-People-Can-Trust/modelVF/network_model.pt

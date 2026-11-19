@@ -1,0 +1,7 @@
+[2026-11-19T21:44:30.301085+00:00] STEP 2 SUMMARY: Biomechanical Minor & Handoff Pair Generation
+[2026-11-19T21:44:30.301085+00:00] Input adult sessions: 632 | Seed: 0
+[2026-11-19T21:44:30.301085+00:00] normal_adult pairs: 3119
+[2026-11-19T21:44:30.301085+00:00] child_starts pairs: 3169
+[2026-11-19T21:44:30.301085+00:00] adult_to_minor_handoff pairs: 3169
+[2026-11-19T21:44:30.301085+00:00] adult_to_adult_handoff pairs: 1098
+[2026-11-19T21:44:30.301085+00:00] Total training pairs generated: 10555

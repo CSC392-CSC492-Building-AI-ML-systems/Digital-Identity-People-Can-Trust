@@ -2,3 +2,9 @@ Flask>=3.0,<4
 cryptography>=42,<46
 Pillow>=11,<13
 zxing-cpp>=3.0,<4
+
+flask>=3.0.0
+numpy>=1.26.0
+pandas>=2.1.0
+requests>=2.31.0
+torch>=2.2.0
