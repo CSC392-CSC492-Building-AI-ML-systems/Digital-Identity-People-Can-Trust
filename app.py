@@ -155,32 +155,27 @@ def upload_verification_document(session_id):
 
 @app.route('/api/session/start', methods=['POST'])
 def start_session():
-    """Verify identity, sync global model weights from FL server, and open a session.
+    """Open a telemetry session from a completed phone verification.
 
-    :return: JSON session credentials, ZKP proof, and active FL round.
+    The request body must contain ``verification_session_id``: the ID of a
+    verification session whose document upload already produced a ZKP. That
+    proof is reused and fresh session credentials are issued.
+
+    :return: JSON session credentials, ZKP proof, active FL round, or 403
+        when the verification is missing, expired, or not verified.
     :rtype: tuple[flask.Response, int]
     """
     global ML_MODEL, ML_MEAN, ML_STD
-    _ = request.json or {}
+    data = request.get_json(silent=True) or {}
 
-    try:
-        identity_data = user_identaty_util.get_identaty(cfg.IDENTITY_DOC_TYPE)
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-    if not identity_data:
-        return jsonify({"error": "Failed to read identity document."}), 400
+    verification = _verification_session(data.get('verification_session_id'))
+    
+    if not verification or verification['status'] != 'verified':
+        return jsonify({"error": "Age verification required."}), 403
+    zkp_proof = verification['proof']
 
     user_id = secrets.token_hex(8)
     hmac_secret = secrets.token_hex(16)
-    dob = identity_data.get('birth_date')
-
-    private_pem, _ = zkp_util.generate_keypair()
-    nonce = zkp_util.generate_secure_nonce()
-    zkp_proof = zkp_util.create_zkp(user_id, dob, nonce, private_pem)
-
-    if zkp_proof is None:
-        return jsonify({"message": "Please stop session. User is a minor."}), 403
 
     ML_MODEL, ML_MEAN, ML_STD, fl_round = sync_from_fl_server(ML_MODEL, ML_MEAN, ML_STD)
 
