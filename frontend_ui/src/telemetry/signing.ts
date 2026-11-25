@@ -5,6 +5,14 @@
  * verifies `hmac.new(hmac_secret.encode('utf-8'), f"x:{x}|y:{y}|ts:{timestamp}", sha256)`.
  */
 
+import { hmac } from '@noble/hashes/hmac.js';
+import { sha256 } from '@noble/hashes/sha2.js';
+import { bytesToHex } from '@noble/hashes/utils.js';
+
+// Pure-JS HMAC rather than Web Crypto. crypto.subtle only exists on secure
+// origins (HTTPS or localhost), so it's undefined when the app is opened at
+// http://<LAN-IP>; e.g. from a phone during development.
+
 const encoder = new TextEncoder();
 
 // The exact string the backend signs. x, y and ts must already be integers
@@ -13,18 +21,11 @@ export function canonicalPayload(x: number, y: number, ts: number): string {
 }
 
 // Import the session's hmac_secret. Key is the secret's UTF-8 bytes, not hex-decoded
-export function importHmacKey(secret: string): Promise<CryptoKey> {
-  return crypto.subtle.importKey(
-    'raw',
-    encoder.encode(secret),
-    { name: 'HMAC', hash: 'SHA-256' },
-    false,
-    ['sign'],
-  );
+export function importHmacKey(secret: string): Uint8Array {
+  return encoder.encode(secret);
 }
 
 // Sign a point; return a 64-character lowercase hex
-export async function signPoint(key: CryptoKey, x: number, y: number, ts: number): Promise<string> {
-  const mac = await crypto.subtle.sign('HMAC', key, encoder.encode(canonicalPayload(x, y, ts)));
-  return Array.from(new Uint8Array(mac), (b) => b.toString(16).padStart(2, '0')).join('');
+export function signPoint(key: Uint8Array, x: number, y: number, ts: number): string {
+  return bytesToHex(hmac(sha256, key, encoder.encode(canonicalPayload(x, y, ts))));
 }

@@ -54,12 +54,14 @@ export class TelemetryClient {
     private sending = false;
     private isStopped = false;
     private failures = 0;
-    private key: Promise<CryptoKey> | null = null;
+    private key: Uint8Array | null = null;
 
     constructor(
         private readonly session: TelemetrySession,
         private readonly onStop: (reason: string) => void,
-        private readonly fetchFn: typeof fetch = fetch,
+        // Wrapped, not `= fetch`: calling `this.fetchFn(...)` would run fetch with
+        // `this` set to the client, which browsers reject with "Illegal invocation".
+        private readonly fetchFn: typeof fetch = (input, init) => fetch(input, init),
     ) {}
 
     get stopped(): boolean {
@@ -101,7 +103,7 @@ export class TelemetryClient {
 
         try {
             this.key ??= importHmacKey(this.session.hmacSecret);
-            const signature = await signPoint(await this.key, p.x, p.y, p.ts);
+            const signature = signPoint(this.key, p.x, p.y, p.ts);
             
             response = await this.fetchFn('/api/telemetry/submit', {
                 method: 'POST',
@@ -116,7 +118,8 @@ export class TelemetryClient {
                     signature,
                 }),
             });
-        } catch {
+        } catch (err) {
+            console.warn('Telemetry point failed to send:', err);
             this.failures += 1;
             if (this.failures >= MAX_NETWORK_FAILURES) this.stop('Lost connection to the server.');
             return;
