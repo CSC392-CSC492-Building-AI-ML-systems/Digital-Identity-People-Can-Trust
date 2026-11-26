@@ -1,4 +1,5 @@
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 import Bomb from 'lucide-react/dist/esm/icons/bomb.mjs';
 import Gem from 'lucide-react/dist/esm/icons/gem.mjs';
 import { Button } from './components/ui/button';
@@ -6,6 +7,7 @@ import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, Di
 import { Input } from './components/ui/input';
 import { Label } from './components/ui/label';
 import { Slider } from './components/ui/slider';
+import { useTelemetry } from './telemetry/use-telemetry';
 
 type Round = {
   size: number;
@@ -103,6 +105,13 @@ export function MinesGameScreen() {
   const [betAmount, setBetAmount] = useState('10');
   const [game, setGame] = useState<Game>({ balance: 1000, round: null, resultOpen: false });
   const [betError, setBetError] = useState('');
+  const navigate = useNavigate();
+  const telemetry = useTelemetry();
+  const locked = telemetry.status === 'stopped';
+
+  useEffect(() => {
+    if (telemetry.status === 'unverified') navigate('/verify-age', { replace: true });
+  }, [telemetry.status, navigate]);
 
   const round = game.round;
   const playing = round?.status === 'playing';
@@ -111,6 +120,7 @@ export function MinesGameScreen() {
   const availableBet = !playing && Number(betAmount) > game.balance ? game.balance.toFixed(2) : betAmount;
 
   function startRound() {
+    if (locked) return;
     const bet = Number(availableBet);
     if (!Number.isFinite(bet) || bet < 0.01 || bet > game.balance || Math.abs(Math.round(bet * 100) - bet * 100) > 1e-8) {
       setBetError(`Enter a bet from C$0.01 to ${money(game.balance)} using at most two decimal places.`);
@@ -169,6 +179,7 @@ export function MinesGameScreen() {
       <div className="mx-auto w-full max-w-7xl">
         <header className="mb-8 flex flex-wrap items-end justify-between gap-3">
           <h1 className="text-4xl font-semibold tracking-tight text-[#ff00aa] sm:text-5xl">Safebet</h1>
+          {telemetry.status === 'starting' ? <p role="status" className="text-sm text-white/75">Starting session monitoring…</p> : null}
           <p className="text-sm text-white/75">Balance <strong className="text-base text-white">{money(game.balance)}</strong></p>
         </header>
 
@@ -227,11 +238,11 @@ export function MinesGameScreen() {
             ) : <p className="text-sm text-white/70">Choose your bet, grid, and bombs to start.</p>}
 
             {playing ? (
-              <Button type="button" variant="secondary" size="lg" disabled={diamondsFound === 0} onClick={cashOut} className="h-11 w-full cursor-pointer text-base">
+              <Button type="button" variant="secondary" size="lg" disabled={locked || diamondsFound === 0} onClick={cashOut} className="h-11 w-full cursor-pointer text-base">
                 {diamondsFound > 0 ? `Cash Out ${money(round.bet * multiplier)}` : 'Reveal a diamond to cash out'}
               </Button>
             ) : (
-              <Button type="button" variant="secondary" size="lg" disabled={game.balance < 0.01} onClick={startRound} className="h-11 w-full cursor-pointer text-base">
+              <Button type="button" variant="secondary" size="lg" disabled={locked || game.balance < 0.01} onClick={startRound} className="h-11 w-full cursor-pointer text-base">
                 {round ? 'Play Again' : 'Place Bet'}
               </Button>
             )}
@@ -243,7 +254,19 @@ export function MinesGameScreen() {
             ) : null}
           </section>
 
-          <MinesBoard round={round} gridSize={gridSize} resultOpen={game.resultOpen} onReveal={revealCell} />
+          <div className="relative min-w-0">
+            <div inert={locked}>
+              <MinesBoard round={round} gridSize={gridSize} resultOpen={game.resultOpen} onReveal={revealCell} />
+            </div>
+            {locked ? (
+              <div role="alert" className="absolute inset-0 grid place-items-center rounded-[32px] bg-[#221057]/90 p-6 text-center backdrop-blur-sm">
+                <div className="max-w-sm space-y-3">
+                  <h2 className="text-2xl font-semibold">Session stopped</h2>
+                  <p className="text-white/85">{telemetry.reason}</p>
+                </div>
+              </div>
+            ) : null}
+          </div>
         </div>
       </div>
 
@@ -276,7 +299,7 @@ export function MinesGameScreen() {
             <DialogClose render={<Button variant="outline" size="lg" className="h-10 flex-1 cursor-pointer border-[#d9d0e8] bg-transparent text-[#24124f] hover:bg-[#f0ebfa]" />}>
               View board
             </DialogClose>
-            <Button type="button" size="lg" disabled={game.balance < 0.01} className="h-10 flex-1 cursor-pointer bg-[#4c2c9e] text-white hover:bg-[#3d2284]" onClick={() => {
+            <Button type="button" size="lg" disabled={locked || game.balance < 0.01} className="h-10 flex-1 cursor-pointer bg-[#4c2c9e] text-white hover:bg-[#3d2284]" onClick={() => {
               setGame((current) => ({ ...current, resultOpen: false }));
               startRound();
             }}>
